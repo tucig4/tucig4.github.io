@@ -1,0 +1,20 @@
+.smartphone{
+    max-width: 300px;
+    max-height: 300px;
+}
+.laptop{
+    max-width: 300px;
+    max-height: 300px;
+}
+.laptop1{
+    max-width: 500px;
+    min-width: 400px;
+    min-height: 400px;
+    max-height: 500px;
+}
+.smartphone1{
+    max-width: 500px;
+    min-width: 400px;
+    min-height: 400px;
+    max-height: 500px;
+}
