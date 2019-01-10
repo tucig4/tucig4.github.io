@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+}
+.wrap{
+    width: 100%;
+}
+.clearfix{
+    overflow: auto;
+}
+.image{
+    width: 33.3333333%;
+    padding: 5%;
+    float: left;
+    text-align: center;
+    border: 1px solid red;
+}
+
+#main-content{
+    max-width: 100%;
+}
+.content{
+    width: 100%;
+}
+#main-menu{
+    text-align: center;
+}
+#banner{
+    width: 100%;
+}
+
+img{
+    width: 100%;
+}
+.decription{
+    color: brown;
+}
+.follow:hover{
+    background-color: yellow;
+}
+
