@@ -1,0 +1,65 @@
+.box1{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition: opacity 0.5s linear;
+}
+.box2{
+    margin-left: 200px;
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+}
+@keyframes FadeIn{
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 0.2;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    70%{
+        opacity: 0.7;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes FadeOut{
+    100%{
+        opacity: 0;
+    }
+    70%{
+        opacity: 0.2;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    20%{
+        opacity: 0.7;
+    }
+    0%{
+        opacity: 1;
+    }
+}
+@keyframes ChangeColor{
+    20%{
+        color:gray;
+    }
+    75%{
+        color: violet;
+    }
+}
+.title{
+    animation: ChangeColor 10s ease infinite;
+}
+.box1{
+    animation: FadeIn 10s ease infinite;
+}
+.box2{
+    animation: FadeOut 10s ease infinite;
+}
+
+
