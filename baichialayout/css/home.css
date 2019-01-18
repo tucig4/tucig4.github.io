@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+}
+.header{
+    background-color: red;
+    width: 100%;
+    height: 50px;
+}
+/*block1*/
+.block1{
+    overflow: hidden;
+    background-color: white;
+    height: 60px;
+}
+.clearfix{
+    overflow: auto;
+}
+.box1{
+    margin-left: 300px;
+    background-color:white;
+    padding: 10px;
+    width: 20%;
+    height: 50px;
+    float: left;
+}
+.box1child{
+    width: 100%;
+    background-color: gray;
+    height: 100%;
+}
+.box2{
+    background-color:white;
+    padding: 10px;
+    width: 20%;
+    height: 50px;
+    float: left;
+}
+.box2child{
+    width: 100%;
+    background-color: gray;
+    height: 100%;
+}
+
+/*block2*/
+.block2{
+    background-color: white;
+    height: 170px;
+}
+.three{
+    margin-top: 10px;
+    margin-left: 300px;
+    background-color:white;
+    padding: 10px;
+    width: 10%;
+    height: 150px;
+    float: left;
+}
+.threechild{
+    width: 100%;
+    background-color: gray;
+    height: 100%;
+}
+.containerone{
+    padding: 0;
+    margin-top: 10px; 
+    float: left;
+    width: 10%;
+    height: 150px;
+    background-color: white;
+}
+.four{
+    padding: 10px;
+    width: 100%;
+    height: 75px;
+    background-color: white;
+}
+.fourchild{
+    width: 100%;
+    background-color: gray;
+    height: 100%;
+}
+.five{
+    padding: 10px;
+    width: 100%;
+    height: 75px;
+    background-color: white;
+}
+.fivechild{
+    width: 100%;
+    background-color: gray;
+    height: 100%;
+}
+.containertwo{
+    padding: 0;
+    margin-top: 10px; 
+    float: left;
+    width: 10%;
+    height: 150px;
+    background-color: white;
+}
+.six{
+    padding: 10px;
+    width: 100%;
+    height: 75px;
+    background-color: white;
+}
+.sixchild{
+    width: 100%;
+    background-color: gray;
+    height: 100%;
+}
+.seven{
+    padding: 10px;
+    width: 100%;
+    height: 75px;
+    background-color: white;
+}
+.sevenchild{
+    width: 100%;
+    background-color: gray;
+    height: 100%;
+}
+.eight{
+    margin-top: 10px;
+    margin-left: 0px;
+    background-color:white;
+    padding: 10px;
+    width: 10%;
+    height: 150px;
+    float: left;
+}
+.eightchild{
+    width: 100%;
+    background-color: gray;
+    height: 100%;
+}
+/*block3*/
+
+
+
+
+
+
+
+
+
+

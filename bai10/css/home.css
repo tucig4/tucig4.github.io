@@ -1,0 +1,299 @@
+/*body*/
+*{
+    box-sizing: border-box;
+}
+.wrapper{
+    /* overflow: hidden; */
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+body,html{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+/*header*/
+#dropdown {
+    z-index: 1;
+    position: relative;
+    display: block;
+}
+  
+.dropdown-content {
+    padding: 0;
+    overflow: hidden;
+    top:37px;
+    left: 0;
+    display: none;
+    position: absolute;
+    background-color: red;
+    min-width: 100%;
+    z-index: 1;
+}
+.dropdown-content a {
+    text-align: center;
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown-content a:hover {background-color: #b31313;
+    z-index: 1;}
+  
+#dropdown:hover .dropdown-content {display: block;}
+  
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+.language>img{
+    padding-right: 10px;
+    float: left;
+    width: 20%;
+    height: 20%;
+}
+.language{
+    float: left;
+}
+.search{
+    border: solid thin white;
+    padding: 6px;
+    float: left;
+}
+.search>img{
+    width: 20px;
+    height: 20px;
+}
+.icon{
+    border-left: solid 10px white;
+    border-right: solid 10px white;
+    border-top: solid thin white;
+    border-bottom: solid thin white;
+    padding: 6px;
+    float: left;
+}
+.icon>img{
+    width: 20px;
+    height: 20px;
+}
+.border1{
+    padding-right: 10px;
+    padding-left: 10px;
+    border-right: solid thin;
+    float: left;
+}
+.border2{
+    padding-right: 10px;
+    padding-left: 10px;
+    float: left;
+}
+.border3{
+    padding: 10px;
+    border: solid thin white;
+    float: left;
+}
+.border3:hover{
+    background-color: #b31313;
+}
+#header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+}
+.head-lv1{
+    background-color: white;
+}
+.head-lv2{
+    
+    background-color: red;
+}
+.top-menu-1{
+    margin: 0;
+}
+.top-menu-2{
+    margin: 0;
+}
+.words1{
+    color: black;
+}
+.words1:hover{
+    color: red;
+}
+.words2{
+    color: white;
+}
+/* Center element in both left and right*/
+.innerone{
+    padding: 10px;
+    margin: 0 auto;
+    width: 50%;
+} 
+.innertwo{
+    margin: 0 auto;
+    width: 50%;
+}
+/*banner*/
+#banner{
+    margin-top: 100px;
+    width: 100%;
+    height: 500px;
+}
+video{
+    width: 100%;
+    height: 500px;
+    
+}
+/*block-1*/
+.innerthree{
+    width: 50%;
+    margin: 0 auto;
+}
+.innerthree>img{
+    padding: 10px;
+    float: left;
+    width: 30%;
+    height: 30%;
+}
+.innerthree>img:hover{
+    transform: scale(1.2);
+}    
+.button{
+    border-radius: 20px;
+    padding: 10px;
+    border: solid thin red;
+}
+.word{
+    color: red;
+}
+.innerbutton{
+    padding-bottom: 43px;
+    width: 73px;
+    margin: 0 auto;
+    height: 38px;
+}
+/*block-2*/
+#block-2{
+    background-color: #f7f7f7;
+}
+.word1{
+    margin-left: 250px;
+    color: red;
+    font-size: 40px;
+}
+.innerfour{
+    width: 50%;
+    margin: 0 auto;
+}
+.innerfour>img{
+    padding: 10px;
+    float: left;
+    width: 45%;
+    height: 45%;
+}
+.innerfour>img:hover{
+    transform: scale(1.2);
+} 
+/*block-3*/
+.innerfive{
+    width: 50%;
+    margin: 0 auto;
+}
+.innerfive>img{
+    float: left;
+    padding: 10px;
+    float: left;
+    width: 45%;
+    height: 45%;
+}
+.innerfive>img:hover{
+    transform: scale(1.2);
+} 
+.box{
+    text-align: center;
+    padding: 10px;
+    float: left;
+    width: 20%;
+    height: 20%;
+}
+/*block-4*/
+.innersix{
+    width: 50%;
+    margin: 0 auto;
+}
+.innersix>img{
+    float: left;
+    padding: 10px;
+    float: left;
+    width: 45%;
+    height: 45%;
+}
+
+#block-4{
+    background-color: #f7f7f7;
+}
+/*footer*/
+.foot-lv1{
+    padding: 10px;
+    background-color: red;
+}
+.innerseven{
+    margin: 0 auto;
+    width: 50%;
+}
+.email{
+    padding-left: 400px;
+    border-radius: 10px;
+    float: left;
+    background-color: white;
+}
+.send{
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    float: right;
+    background-color:#b31313;
+}
+.word2{
+    padding-top: 10px;
+    color: white;
+    padding-right: 100px;
+    float: left;
+}
+.word3{
+    padding-top: 10px;
+    padding-right: 10px;
+    color: white;
+    float: left;
+}
+.foot-lv2{
+    padding: 10px;
+    background-color: white;
+}
+.innereight{
+    width: 71%;
+    margin: 0 auto;
+}
+.information{
+    padding-right: 71px;
+    float: left;
+}
+.company1{
+    width: 20%;
+    margin: 0 auto;
+}
+.company2{
+    border-top: solid thin black ;
+}
+
+
