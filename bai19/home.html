@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quiz Game</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/home.css">
+        <link rel="stylesheet" type="text/css" href="./css/fontawesome-with-css/css/all.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="quizGame">
+                <input type="text" class="question" value=""disabled></input>
+                <div class="answer">
+                    <button type="button" class="marked numberOne" value=""></button>
+                    <button type="button" class="marked numberTwo" value=""></button>
+                    <button type="button" class="marked numberThree" value=""></button>
+                    <button type="button" class="marked numberFour" value=""></button>
+                    <button type="button" class="next"><i class="fas fa-angle-double-right"></i></button>
+                </div>
+                <div class="congratulation" id="congratulation">
+                    <div class="score">
+                        <iframe src="https://giphy.com/embed/3o6fJ1BM7R2EBRDnxK" width="480" height="234" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/congratulations-congrats-3o6fJ1BM7R2EBRDnxK"></a></p>
+                        <p>Not bad for a newbie ! Try Again</p>
+                        <p id="point"></p>
+                    </div>
+                    <div class="reset">
+                        <button type="button" class="reset" value="">Reset</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>    
+        <script src="js/script.js"></script>
+    </body>
+</html>

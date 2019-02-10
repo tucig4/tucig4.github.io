@@ -1,0 +1,100 @@
+body,html{
+    background: url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/GfRLKaE/videoblocks-yellow-sunburst-background_hnbzmzmnx_thumbnail-full01.png);
+    margin: 0;
+    padding: 0;
+    z-index: -100;
+    border: none;
+}
+*{
+    box-sizing: border-box;
+}
+.wrapper{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.quizGame{
+    position: relative;
+    z-index: 1000;
+    width: 50%;
+    height: 30%;
+    margin: 20% auto;
+}
+input{
+    font-size: 20px;
+    color: white;
+    background-color: blue;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+.answer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+button{
+    margin: 10px auto;
+    font-size: 20px;
+    height: 40px;
+    width: 215px;
+    background-color: blue;
+    color: white;
+}
+button:hover{
+    background-color: red;
+}
+.next{
+    grid-row-start: 3;
+    grid-column-start: 2;
+    grid-row-end: 3;
+    grid-column-end: 2;
+}
+.numberOne{
+    grid-row-start: 0;
+    grid-column-start: 0;
+    grid-row-end: 0;
+    grid-column-end: 0;
+}
+.numberTwo{
+    grid-row-start: 1;
+    grid-column-start: 3;
+    grid-row-end: 1;
+    grid-column-end: 3;
+}
+.numberThree{
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-row-end: 2;
+    grid-column-end: 1;
+}
+.numberFour{
+    grid-row-start: 2;
+    grid-column-start: 3;
+    grid-row-end: 2;
+    grid-column-end: 3;
+}
+.congratulation{
+    margin: 0 auto;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+}
+p{
+    font-size: 40px;
+    color: blue;
+}
+.score{
+    position: relative;
+    text-align: center;
+}
+.reset{
+    text-align: center;
+    position: relative;
+}
+
+
+
+
+
