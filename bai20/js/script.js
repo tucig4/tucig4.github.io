@@ -47,180 +47,174 @@ allQuestionAndAnswer.push(fifthQuestion);
 
 var page=0;
 var rightAnswerPerQuestion=0;
-window.onload=function(){
-    document.getElementById('congratulation').style.display="none";
-    displayContent();
-}
+$(window).on("load",function(){
+    $('#congratulation').hide();
+    jQuery.displayContent();
+});
 
-function updateQuestion(){
-    const question=document.querySelector('.question');
+jQuery.updateQuestion=function(){
     for(let i=0;i<allQuestionAndAnswer.length;i++){
         if(page===0){
-            return question.value=allQuestionAndAnswer[0].question;
+            return $('.question').val(allQuestionAndAnswer[0].question);
         }
         if(page===1){
-            return question.value=allQuestionAndAnswer[1].question;
+            return $('.question').val(allQuestionAndAnswer[1].question);
         }
         if(page===2){
-            return question.value=allQuestionAndAnswer[2].question;
+            return $('.question').val(allQuestionAndAnswer[2].question);
         }
         if(page===3){
-            return question.value=allQuestionAndAnswer[3].question;
+            return $('.question').val(allQuestionAndAnswer[3].question);
         }
         if(page===4){
-            return question.value=allQuestionAndAnswer[4].question;
+            return $('.question').val(allQuestionAndAnswer[4].question);
         }
     }
     
 }
 
-function displayContent(){
-    updateAnswer();
-    updateQuestion();
+jQuery.displayContent=function(){
+    jQuery.updateAnswer();
+    jQuery.updateQuestion();
 }
-function updateAnswer(){
-    const answerOne=document.querySelector('.numberOne');
-    const answerTwo=document.querySelector('.numberTwo');
-    const answerThree=document.querySelector('.numberThree');
-    const answerFour=document.querySelector('.numberFour');
-
+jQuery.updateAnswer=function(){
     for(let i=0;i<allQuestionAndAnswer.length;i++){
         if(page===0){
-           return answerOne.innerHTML=allQuestionAndAnswer[0].answerNumberOne,
-            answerTwo.innerHTML=allQuestionAndAnswer[0].answerNumberTwo,
-            answerThree.innerHTML=allQuestionAndAnswer[0].answerNumberThree,
-            answerFour.innerHTML=allQuestionAndAnswer[0].answerNumberFour;        
+           return $('.numberOne').html(allQuestionAndAnswer[0].answerNumberOne),
+           $('.numberTwo').html(allQuestionAndAnswer[0].answerNumberTwo),
+           $('.numberThree').html(allQuestionAndAnswer[0].answerNumberThree),
+           $('.numberFour').html(allQuestionAndAnswer[0].answerNumberFour);        
         }
         if(page===1){
-           return answerOne.innerHTML=allQuestionAndAnswer[1].answerNumberOne,
-            answerTwo.innerHTML=allQuestionAndAnswer[1].answerNumberTwo,
-            answerThree.innerHTML=allQuestionAndAnswer[1].answerNumberThree,
-            answerFour.innerHTML=allQuestionAndAnswer[1].answerNumberFour;        
+            return $('.numberOne').html(allQuestionAndAnswer[1].answerNumberOne),
+            $('.numberTwo').html(allQuestionAndAnswer[1].answerNumberTwo),
+            $('.numberThree').html(allQuestionAndAnswer[1].answerNumberThree),
+            $('.numberFour').html(allQuestionAndAnswer[1].answerNumberFour);       
         }
         if(page===2){
-            return answerOne.innerHTML=allQuestionAndAnswer[2].answerNumberOne,
-            answerTwo.innerHTML=allQuestionAndAnswer[2].answerNumberTwo,
-            answerThree.innerHTML=allQuestionAndAnswer[2].answerNumberThree,
-            answerFour.innerHTML=allQuestionAndAnswer[2].answerNumberFour;        
+            return $('.numberOne').html(allQuestionAndAnswer[2].answerNumberOne),
+           $('.numberTwo').html(allQuestionAndAnswer[2].answerNumberTwo),
+           $('.numberThree').html(allQuestionAndAnswer[2].answerNumberThree),
+           $('.numberFour').html(allQuestionAndAnswer[2].answerNumberFour);        
         }
         if(page===3){
-            return answerOne.innerHTML=allQuestionAndAnswer[3].answerNumberOne,
-            answerTwo.innerHTML=allQuestionAndAnswer[3].answerNumberTwo,
-            answerThree.innerHTML=allQuestionAndAnswer[3].answerNumberThree,
-            answerFour.innerHTML=allQuestionAndAnswer[3].answerNumberFour;        
+            return $('.numberOne').html(allQuestionAndAnswer[3].answerNumberOne),
+           $('.numberTwo').html(allQuestionAndAnswer[3].answerNumberTwo),
+           $('.numberThree').html(allQuestionAndAnswer[3].answerNumberThree),
+           $('.numberFour').html(allQuestionAndAnswer[3].answerNumberFour);       
         }
         if(page===4){
-            return answerOne.innerHTML=allQuestionAndAnswer[4].answerNumberOne,
-            answerTwo.innerHTML=allQuestionAndAnswer[4].answerNumberTwo,
-            answerThree.innerHTML=allQuestionAndAnswer[4].answerNumberThree,
-            answerFour.innerHTML=allQuestionAndAnswer[4].answerNumberFour;        
+            return $('.numberOne').html(allQuestionAndAnswer[4].answerNumberOne),
+           $('.numberTwo').html(allQuestionAndAnswer[4].answerNumberTwo),
+           $('.numberThree').html(allQuestionAndAnswer[4].answerNumberThree),
+           $('.numberFour').html(allQuestionAndAnswer[4].answerNumberFour);        
         }
     }
     
 }
-function handleAnswer(answer){
+jQuery.handleAnswer=function(answer){
     for(let i=0;i<allQuestionAndAnswer.length;i++){
         if(page===0){
-            if(answer.classList.contains("numberOne") ){
+            if(answer.hasClass("numberOne") ){
                 if(allQuestionAndAnswer[0].answerNumberOne===allQuestionAndAnswer[0].rightAnswer){
                     return rightAnswerPerQuestion++;
                 }
             }
-            if(answer.classList.contains("numberTwo") ){
+            if(answer.hasClass("numberTwo") ){
                 if(allQuestionAndAnswer[0].answerNumberTwo===allQuestionAndAnswer[0].rightAnswer){
                     return rightAnswerPerQuestion++;
                 }
             }
-            if(answer.classList.contains("numberThree")){
+            if(answer.hasClass("numberThree")){
                 if(allQuestionAndAnswer[0].answerNumberThree===allQuestionAndAnswer[0].rightAnswer){
                     return rightAnswerPerQuestion++;
                 }
             }
-            if(answer.classList.contains("numberFour")){
+            if(answer.hasClass("numberFour")){
                 if(allQuestionAndAnswer[0].answerNumberFour===allQuestionAndAnswer[0].rightAnswer){
                     return rightAnswerPerQuestion++;
                 }
             }
         }else if(page===1){
-            if(answer.classList.contains("numberOne") ){
+            if(answer.hasClass("numberOne") ){
                 if(allQuestionAndAnswer[1].answerNumberOne===allQuestionAndAnswer[1].rightAnswer){
                     return rightAnswerPerQuestion++;
                 }
             }
-            if(answer.classList.contains("numberTwo") ){
+            if(answer.hasClass("numberTwo") ){
                 if(allQuestionAndAnswer[1].answerNumberTwo===allQuestionAndAnswer[1].rightAnswer){
                     return rightAnswerPerQuestion++;
                 }
             }
-            if(answer.classList.contains("numberThree")){
+            if(answer.hasClass("numberThree")){
                 if(allQuestionAndAnswer[1].answerNumberThree===allQuestionAndAnswer[1].rightAnswer){
                     return rightAnswerPerQuestion++;
                 }
             }
-            if(answer.classList.contains("numberFour")){
+            if(answer.hasClass("numberFour")){
                 if(allQuestionAndAnswer[1].answerNumberFour===allQuestionAndAnswer[1].rightAnswer){
                     return rightAnswerPerQuestion++;
                 }
             }
         }else if(page===2){
-            if(answer.classList.contains("numberOne") ){
+            if(answer.hasClass("numberOne") ){
                 if(allQuestionAndAnswer[2].answerNumberOne===allQuestionAndAnswer[2].rightAnswer){
                     return rightAnswerPerQuestion++;
                 }
             }
-            if(answer.classList.contains("numberTwo") ){
+            if(answer.hasClass("numberTwo") ){
                 if(allQuestionAndAnswer[2].answerNumberTwo===allQuestionAndAnswer[2].rightAnswer){
                     return rightAnswerPerQuestion++;
                 }
             }
-            if(answer.classList.contains("numberThree")){
+            if(answer.hasClass("numberThree")){
                 if(allQuestionAndAnswer[2].answerNumberThree===allQuestionAndAnswer[2].rightAnswer){
                     return rightAnswerPerQuestion++;
                 }
             }
-            if(answer.classList.contains("numberFour")){
+            if(answer.hasClass("numberFour")){
                 if(allQuestionAndAnswer[2].answerNumberFour===allQuestionAndAnswer[2].rightAnswer){
                     return rightAnswerPerQuestion++;
                 }
             }
         }else if(page===3){
-            if(answer.classList.contains("numberOne") ){
+            if(answer.hasClass("numberOne") ){
                 if(allQuestionAndAnswer[2].answerNumberOne===allQuestionAndAnswer[2].rightAnswer){
                     return rightAnswerPerQuestion++;
                 }
             }
-            if(answer.classList.contains("numberTwo") ){
+            if(answer.hasClass("numberTwo") ){
                 if(allQuestionAndAnswer[2].answerNumberTwo===allQuestionAndAnswer[2].rightAnswer){
                     return rightAnswerPerQuestion++;
                 }
             }
-            if(answer.classList.contains("numberThree")){
+            if(answer.hasClass("numberThree")){
                 if(allQuestionAndAnswer[2].answerNumberThree===allQuestionAndAnswer[2].rightAnswer){
                     return rightAnswerPerQuestion++;
                 }
             }
-            if(answer.classList.contains("numberFour")){
+            if(answer.hasClass("numberFour")){
                 if(allQuestionAndAnswer[2].answerNumberFour===allQuestionAndAnswer[2].rightAnswer){
                     return rightAnswerPerQuestion++;
                 }
             }
         }else if(page===4){
-            if(answer.classList.contains("numberOne") ){
+            if(answer.hasClass("numberOne") ){
                 if(allQuestionAndAnswer[4].answerNumberOne===allQuestionAndAnswer[4].rightAnswer){
                     return rightAnswerPerQuestion++;
                 }
             }
-            if(answer.classList.contains("numberTwo") ){
+            if(answer.hasClass("numberTwo") ){
                 if(allQuestionAndAnswer[4].answerNumberTwo===allQuestionAndAnswer[4].rightAnswer){
                     return rightAnswerPerQuestion++;
                 }
             }
-            if(answer.classList.contains("numberThree")){
+            if(answer.hasClass("numberThree")){
                 if(allQuestionAndAnswer[4].answerNumberThree===allQuestionAndAnswer[4].rightAnswer){
                     return rightAnswerPerQuestion++;
                 }
             }
-            if(answer.classList.contains("numberFour")){
+            if(answer.hasClass("numberFour")){
                 if(allQuestionAndAnswer[4].answerNumberFour===allQuestionAndAnswer[4].rightAnswer){
                     return rightAnswerPerQuestion++;
                 }
@@ -230,57 +224,56 @@ function handleAnswer(answer){
         
     }
     
-}
-function nextPage(){
+};
+jQuery.nextPage=function(){
     page++;
     if(page<5){
-        displayContent();
+        jQuery.displayContent();
     }else{
-        document.getElementById('congratulation').style.display="block";
-        document.getElementsByClassName('answer')[0].style.display='none';
-        document.getElementsByClassName('question')[0].style.display='none';
-        document.getElementById('point').innerText=rightAnswerPerQuestion+"/5";
+        $('#congratulation').show();
+        $('.answer').hide();
+        $('.question').hide();
+        $('#point').text(rightAnswerPerQuestion+"/5");
     }
-    
 }
-function resetPage(){
-    window.location.reload(true);
+$.fn.resetPage=function(){
+    location.reload();
+};
+  
+$.fn.changeTheme=function(){
+    $('html').css('background-image',"url('https://i.imgur.com/yDdtRpB.jpg')");
+    $('body').css('background-image',"url('https://i.imgur.com/yDdtRpB.jpg')");
 }
 
-
-const quiz=document.querySelector('.quizGame');
-const answer=document.querySelector('.answer');
-answer.addEventListener('click',function(event){
-    const target=event.target;
-    if(target.classList.contains("numberOne")){
-        handleAnswer(target);
+$(".answer").click(function(event){
+    const target=$(event.target);
+    if(target.hasClass("numberOne")){
+        jQuery.handleAnswer(target);
         return;
     }
-    if(target.classList.contains("numberTwo")){
-        handleAnswer(target);
+    if(target.hasClass("numberTwo")){
+        jQuery.handleAnswer(target);
         return;
     }
-    if(target.classList.contains("numberThree")){
-        handleAnswer(target);
+    if(target.hasClass("numberThree")){
+        jQuery.handleAnswer(target);
         return;
     }
-    if(target.classList.contains("numberFour")){
-        handleAnswer(target);
+    if(target.hasClass("numberFour")){
+        jQuery.handleAnswer(target);
         return;
     }
-    if(!target.classList.contains("marked")){
-        nextPage();
+    if(!target.hasClass("marked")){
+        jQuery.nextPage();
         return;
     }
 });
-const congratulation=quiz.querySelector('.congratulation');
-const reset=congratulation.querySelector('.reset');
-reset.addEventListener('click',function(event){
-    const target=event.target;
-    if(target.classList.contains("reset")){
-        resetPage();
-        return;
-    }
+
+$('.reset').click(function(event){
+        $('.reset').resetPage();
+});
+$('.change').click(function(event){
+        $('.change').changeTheme();
 });
 
 
