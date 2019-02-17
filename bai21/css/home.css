@@ -1,44 +1,55 @@
 *{
-    box-sizing: border-box;
+    border: 0;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
-body,html{
-    margin: 0;
-    padding: 0;
+.clear {
+	clear: both;
 }
-.memory-card{
-    margin: 2% auto;
+html, body {
+	width: 100%;
+	height: 100%;
+}
+.content{
+    margin: 3% auto;
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+	grid-template-columns: repeat(5,1fr);
     grid-column-gap: 30px;
     grid-row-gap: 30px;
-}
-.f1_container {
     position: relative;
-    width: 314px;
-    height: 480px;
-    perspective: 800px;
-    
-}
-.f1_container:hover{
-    transform: scale(1.1);
-    
-}
-.f1_card {
     width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-    transition: all 1.0s linear;
 }
-.f1_container.active .f1_card { /* this mean f1_card inside f1_container and has active class*/
-    transform: rotateY(180deg);
-}
-
-.face {
+.wrap{
     position: absolute;
     width: 100%;
     height: 100%;
-    backface-visibility: hidden;
 }
-.back {
+.grid{
+    float: left;
+}
+.card{
+    position: relative;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.back{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.front{
     transform: rotateY(180deg);
 }
+.card.clicked .back {
+	transform: rotateY(180deg);
+}
+.card.clicked .front {
+	transform: rotateY(0deg);
+}
+.card .front, .card .back {
+	transition: all 0.5s ease;
+	backface-visibility: hidden;
+}
+
