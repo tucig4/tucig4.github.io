@@ -85,6 +85,7 @@ body,html{
 }
 .box{
     cursor: pointer;
+    background:transparent;
     font-family: 'Aileron';
     font-weight: bold;
     float: right;
@@ -96,6 +97,10 @@ body,html{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.wordbox{
+    color: white;
+    text-decoration: none;
 }
 .header-text{
     top:235px;
