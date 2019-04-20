@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+}
+body,html{
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+.register-form{position: relative;
+    border-radius: 5px;
+    margin: 0 auto;
+    width: 300px;
+    height: 400px;
+    background-color: #d0d0d0;
+}
+.wrap{
+    margin: 0 auto;
+    width: 80%;
+    border-top: 1px solid rgb(189, 188, 188);
+    border-bottom: 1px solid rgb(189, 188, 188); ;
+}
+input[type=text]{
+    width: 100%;
+    padding: 10px;
+}
+input[type=password]{
+    width: 100%;
+    padding: 10px;
+}
+input[type=tel]{
+    width: 100%;
+    padding: 10px;
+}
+input[type=submit]{
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: rgb(38, 4, 41);
+    color: white;
+}
+input{
+    margin: 0 auto;
+}
+.inputWithicon input[type=text]{
+    padding-left: 40px;
+}
+.inputWithicon input[type=password]{
+    padding-left: 40px;
+}
+.inputWithicon input[type=tel]{
+    padding-left: 40px;
+}
+.wrapper {
+    padding-top: 10px;
+    text-align: center;
+}
+.inputWithicon i{
+    position: absolute;
+    top: 9px;
+    left: 12px;
+}
+.inputWithicon{
+    position: relative;
+    margin: 10px;
+}
+.male{
+    position: absolute;
+    top: 308px;
+    left: 74px;
+}
+.female{
+    position: absolute;
+    top: 308px;
+    left: 171px;
+}
+p{
+    font-size: 20px;
+    padding-top: 10px;
+    text-align: center;
+}

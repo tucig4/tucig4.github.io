@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+}
+body,html{
+    padding: 0;
+    margin: 0;
+}
+table{
+    width: 50%;
+    margin: 0 auto;
+    border-collapse:separate;
+    border:solid black 1px;
+    border-radius:6px;
+    border-spacing: 0;
+}
+th,td{
+    padding: 20px;
+    border: none;
+   
+}
+th{
+    position: relative;
+}
+i{
+    position: absolute;
+    top: 20%;
+    left: 93%;
+}
+thead>tr{
+    background-color: rgb(69, 69, 238);
+    color: white;
+    
+}
+tbody>tr:hover{
+    background-color: blue;
+    color: white;
+}
+p{
+    text-align: center;
+    color: blue
+}
+.img1{
+    width: 50%;
+    height: 20%;
+}
+img{
+    width: 50%;
+    height: 50%;
+}

@@ -8,6 +8,7 @@ var current = null;
 var count=0;
 var remainingTime =30;
 var Page=0;
+var countCards=0;
 
 function shuffle(array) {
     var currentIndex = array.length, temporaryValue, randomIndex;
@@ -54,6 +55,7 @@ function flip(card){
                 current=null;
                 document.getElementById('win').play();
                 count++;
+                countCards=count;
                 if(count===5){
                     $('.wrap').hide();
                     $('#progressBar').hide();
@@ -77,6 +79,7 @@ function progress(timeLeft,timeTotal,$element){
         $('.wrap').hide();
         $('#progressBar').hide();
         $('.congratulation').show();
+        $('#point').text(countCards+"/5");
         $('.reset').click(function(event){
         $('.reset').resetPage();
         });

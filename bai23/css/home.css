@@ -100,6 +100,7 @@ a{
     display: none;
 }
 .congratulation{
+    position: relative;
     margin: 10% auto;
     width: 50%;
     height: 500px;
@@ -107,9 +108,27 @@ a{
 }
 p{
     text-align: center;
-    font-size: 50px;
+    font-size: 30px;
 }
 .no{
+    top:5px;
+    left: 156px;
+    position: absolute;
     display: block;
     margin: 10px auto;
+}
+.reset{
+    position: absolute;
+    top: 442px;
+    left: 276px;
+}
+#point{
+    position: absolute;
+    top: 364px;
+    left: 371px;
+}
+.no1{
+    position: absolute;
+    top: 405px;
+    left: 326px;
 }
