@@ -321,7 +321,7 @@ body,html{
     top: 0px;
     left: 601px;
     position: relative;
-    width: 505px;
+    width: 447px;
     height: 411px;   
 }
 .main-word-image-content-lv1{
@@ -332,7 +332,7 @@ body,html{
 }
 .main-word-image-content-lv2{
     position: relative;
-    width: 487px;
+    width: 447px;
     height: 137px;
 }
 .circle-1{
@@ -357,7 +357,7 @@ body,html{
     position: absolute;
     top: 237px;
     left: 0;
-    width: 487px;
+    width: 447px;
     border: 1px solid #D8D8D8;
     margin: 0;
     padding: 0;
@@ -365,7 +365,7 @@ body,html{
 }
 .main-word-image-content-lv3{
     position: relative;
-    width: 504px;
+    width: 447px;
     height: 69px;
 }
 .circle-2{
@@ -395,7 +395,7 @@ body,html{
     position: absolute;
     top: 28px;
     left: 1px;
-    width: 487px;
+    width: 447px;
     height: 91px;
     font-size: 16px;
     font-style: italic;
@@ -667,7 +667,7 @@ body,html{
     top: 427px;
     left: 1111px;
     position: relative;
-    width: 430px;
+    width: 392px;
     height: 407px;
 }
 .main-content-lv2-4-1{
@@ -876,7 +876,7 @@ body,html{
 }
 .image-main-content-lv3-2-3{
     position: absolute;
-    top: 1182px;
+    top: 2000px;
     left:calc(50% - 102.5px);
     width: 205px;
     height: 37px;
@@ -1128,7 +1128,15 @@ body,html{
     z-index: 100;
 }
 /*content lv5*/
-.content-lv5{
+.content-lv5-desktop{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 472px;
+    background-color: #2F5BEA;
+}
+.content-lv5-mobile{
+    display: none;
     position: relative;
     width: 100%;
     height: 472px;
@@ -1331,6 +1339,25 @@ body,html{
         display: none;
     }
     /*header*/
+    .header-text{
+        top:326px;
+        left: calc(50% - 150.5px);
+        position: relative;     
+        width: 303px;
+        height: 369px;
+    }
+    .header-text-lv1{
+        position: relative;
+        width: 303px;
+        height: 116px;
+        font-size: 48px;
+    }
+    .header-text-lv2{
+        position: relative;
+        width: 303px;
+        height: 73px;
+        font-size: 21px;    
+    }
     .mobile{
         position: relative;
         display: block;
@@ -1342,6 +1369,7 @@ body,html{
         background-size: cover;
     }
     .btn{
+        cursor: pointer;
         position: absolute;
         top: 32px;
         left: 32px;
@@ -1360,11 +1388,6 @@ body,html{
         position: absolute;
         top: 215px;
         left: calc(50% - 100px);
-    }
-    .header-text{
-        position: absolute;
-        top: 314px;
-        left: calc(50% - 185.5px);
     }
     .menu{
         position: absolute;
@@ -1404,6 +1427,14 @@ body,html{
         width: 594px;
         height: 870.31px;
     }
+    .main-word-image-content-lv4-2 {
+        position: absolute;
+        top: 138px;
+        left: 1px;
+        width: 204px;
+        height: 20px;
+        font-weight: 600;
+    }
     .main-content-lv1-container{
         position: relative;
         width:594px;
@@ -1424,7 +1455,7 @@ body,html{
     .word-main-content-lv2{
         line-height: 25px;
         position: absolute;
-        top: 59px;
+        top: 110px;
         left: calc(50% - 297px);
         text-align: center;
         color: #7E8085;
@@ -1443,38 +1474,44 @@ body,html{
     }
     .icon-container-1{
         position: absolute;
-        top: 200px;
+        top: 319px;
         left: calc(50% - 75.5px);
     }
     .icon-container-2{
         position: absolute;
-        top: 350px;
+        top: 452px;
         left: calc(50% - 91px);
     }
     .icon-container-3{
         position: absolute;
-        top: 500px;
+        top: 585px;
         left: calc(50% - 100px);
     }
     .image-content-lv1{
+        width: 320px;
+        height: 302.53px;
         position: absolute;
-        top: 650px;
-        left: calc(50% - 250.315px);
+        top: 700px;
+        left: calc(50% - 160px);
     }
     .word-image-content-lv1{
         position: absolute;
         top: 1200px;
-        left: calc(50% - 252.5px);
+        left: calc(50% - 139.5px);
+        width: 289px;
+        height: 411px;
     }
     .group{
+        width: 78px;
+        height: 78px;
         position: absolute;
-        top: 727px;
-        left: calc(50% - 313px);
+        top: 802px;
+        left: calc(50% - 149px);
     }
     .triangle{
         position: absolute;
-        top: 1216px;
-        left: calc(50% - -177px);
+        top: 1100px;
+        left: calc(50% - -90px);
     }
     /*content-lv2*/
     .content-lv2-desktop{
@@ -1483,6 +1520,17 @@ body,html{
         width: 100%;
         height: 1480px;
         background-color: #F6F8F9;
+    }
+    .image-main-content-lv2-3{
+        width: 100%;
+        height: 100%;
+    }
+    .main-content-lv2-3{
+        position: absolute;
+        top: 1296px;
+        left: calc(50% - 160px);
+        width: 320px;
+        height: 200.83px;
     }
     .content-lv2-mobile{
         display: block;
@@ -1522,7 +1570,7 @@ body,html{
     }
     .main-content-lv2-2-1{
         position: absolute;
-        top: 325px;
+        top: 356px;
         left: calc(50% - 131px);
         margin: 0;
         width: 262px;
@@ -1532,7 +1580,7 @@ body,html{
         width: 259px;
         height: 237px;
         position: absolute;
-        top: 622px;
+        top: 647px;
         left: calc(50% - 129.5px);
         margin: 0;
     }
@@ -1542,15 +1590,41 @@ body,html{
         left: calc(50% - 138px);
         margin: 0;
     }
-    .main-content-lv2-3{
-        position: absolute;
-        top: 1296px;
-        left: calc(50% - 343px);
-    }
     .main-content-lv2-4{
+        width: 241px;
+        height: 407px;
         position: absolute;
         top: 1826.53px;
-        left: calc(50% - 215px);
+        left: calc(50% - 120.5px);
+    }
+    .main-content-lv2-4-3{
+        top: 97px;
+    }
+    .main-content-lv2-4-4 {
+        position: absolute;
+        top: 134px;
+        left: 2px;
+        font-size: 16px;
+    }
+    .main-content-lv2-4-6 {
+        position: absolute;
+        top: 276px;
+        left: 2px;
+        font-size: 16px;
+    }
+    .main-content-lv2-4-7 {
+        position: absolute;
+        top: 313px;
+        left: 2px;
+        font-size: 16px;
+    }
+    .main-content-lv2-4-8 {
+        position: absolute;
+        top: 372px;
+        left: 2px;
+        font-size: 18px;
+        color: #2F5BEA;
+        font-weight: bold;
     }
     /*content-lv3*/
     .content-lv3-desktop{
@@ -1568,12 +1642,29 @@ body,html{
     .word-main-content-lv3-1{
         position: absolute;
         top: 50px;
-        left: calc(50% - 215px);
+        left: calc(50% - 153.53px);
+        width: 307px;
+    }
+    .main-content-lv3-1-3 {
+        position: absolute;
+        top: 112px;
+        left: 2px;
+        font-size: 16px;
+        color: #54565A;
+    }
+    .main-content-lv3-1-4 {
+        position: absolute;
+        top: 148px;
+        left: 2px;
+        font-size: 16px;
+        color: #54565A;
     }
     .image-main-content-lv3-1{
         position: absolute;
         top: 402px;
-        left: calc(50% - 274.5px);
+        left: calc(50% - 160px);
+        width: 320px;
+        height: 206.34px;
     }
     .word-main-content-lv3-2-1 {
         position: absolute;
@@ -1610,27 +1701,27 @@ body,html{
     .image-main-content-lv3-2-7{
         position: absolute;
         top: 2070px;
-        left: calc(50% - 19px);
+        left: calc(50% - 57px);
     }
     .image-main-content-lv3-2-8{
         position: absolute;
         top: 2170px;
-        left: calc(50% - 19px);
+        left: calc(50% - 57px);
     } 
     .image-main-content-lv3-2-9{
         position: absolute;
         top: 2270px;
-        left: calc(50% - 19px);
+        left: calc(50% - 57px);
     } 
     .image-main-content-lv3-2-10{
         position: absolute;
         top: 2370px;
-        left: calc(50% - 19px);
+        left: calc(50% - 57px);
     } 
     .image-main-content-lv3-2-11{
         position: absolute;
         top: 2470px;
-        left: calc(50% - 19px);
+        left: calc(50% - 57px);
     }
     /*content lv4*/
     .content-lv4-desktop{
@@ -1649,15 +1740,28 @@ body,html{
         width: 100%;
         height: 1600px;
     }
+    .main-content-lv4-1{
+        width: 259px;
+        height: 159px;
+        position: absolute;
+        left: calc(50% - 129.5px);
+    }
+    .word-main-content-lv4-2{
+        width: 283px;
+        height: 86px;
+        position: absolute;
+        top: 100px;
+        left: calc(50% - 141.5px);
+    }
     .main-content-lv4-2-1{
         z-index: 1000;
         position: absolute;
-        top: 324px;
+        top: 367px;
         left: calc(50% - 191px);
     }
     .main-content-lv4-2-2{
         position: absolute;
-        top: 806px;
+        top: 859px;
         left: calc(50% - 191px);
     }     
     .main-content-lv4-3{
@@ -1682,6 +1786,46 @@ body,html{
         left: calc(50% - 250.5px);
         z-index: 10;
     }
+    /*content lv5*/
+    .content-lv5-desktop{
+        display: none;
+        position: relative;
+        width: 100%;
+        height: 472px;
+        background-color: #2F5BEA;
+    }
+    .content-lv5-mobile{
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 472px;
+        background-color: #2F5BEA;
+    }
+    .word-main-content-lv5-1 {
+        position: absolute;
+        top: 0;
+        left: calc(50% - 166px);
+    }    
+    .word-main-content-lv5-2 {
+        position: absolute;
+        top: 89px;
+        left: calc(50% - 187.07px);
+    }
+    .button-main-content-lv5-2 {
+        border-radius: 5px;
+        background-color: white;
+        color: #2F5BEA;
+        font-size: 16px;
+        font-weight: bold;
+        width: 180px;
+        height: 55px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 326px;
+        left: calc(50% - 90px);
+    }    
     /*footer*/
     .footer-desktop{
         display: none;
