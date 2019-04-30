@@ -4,9 +4,14 @@
         <title>CutHTMLCSS</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"  crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
-    <body>
+    <body id="bootstrap-overrides">
         <div class="wrapper">
             <header class="header-desktop">
                 <img class="stick" src="img/Rectangle 3.png">
@@ -21,16 +26,46 @@
                     <div class="header-sport-text-4">SOCCER</div>
                     <div class="header-sport-text-5">ICE HOCKEY</div>
                 </div>
-                <div class="apple-container">
+                <a href="#" class="apple-container">
                     <img class="apple-image" src="img/Icon - Apple.png">
                     <div class="apple-text-1">DOWNLOAD ON THE</div>
                     <div class="apple-text-2">APP STORE</div>
-                </div>
-                <div class="android-container">
+                </a>
+                <a href="#" class="android-container">
                     <img class="android-image" src="img/Icon - Google Play.png">
                     <div class="android-text-1">GET IT ON</div>
                     <div class="android-text-2">GOOGLE PLAY</div>
+                </a>
+            </header>
+            <header class="header-mobile">
+                <img class="stick" src="img/Rectangle 3-m.png">
+                <img class="logo" src="img/logo.png">
+                <span class="header-text-2">BE RECRUITED</span>
+                <span class="header-text-3">PLAY COLLEGE<br>SPORTS</span>
+                <div class="header-sport-text-container-0">
+                    <div class="header-sport-text-container-1">
+                        <div class="header-sport-text-1">FOOTBALL</div>
+                        <div class="header-sport-text-2">BASKETBALL</div>
+                        <div class="header-sport-text-3">BASEBALL</div>
+                        
+                    </div>
+                    <div class="header-sport-text-container-2">
+                        <div class="header-sport-text-4">SOCCER</div>
+                        <div class="header-sport-text-5">ICE HOCKEY</div>
+                    </div>
                 </div>
+                
+                
+                <a href="#" class="apple-container">
+                    <img class="apple-image" src="img/Icon - Apple.png">
+                    <div class="apple-text-1">DOWNLOAD ON THE</div>
+                    <div class="apple-text-2">APP STORE</div>
+                </a>
+                <a href="#" class="android-container">
+                    <img class="android-image" src="img/Icon - Google Play.png">
+                    <div class="android-text-1">GET IT ON</div>
+                    <div class="android-text-2">GOOGLE PLAY</div>
+                </a>
             </header>
             <section class="athlets-desktop">
                 <div class="athlets-text-lv0-0">01</div>
@@ -51,6 +86,62 @@
                 <img class="athlets-image-2" src="img/Path 45.png">
                 <img class="athlets-image-3" src="img/Rectangle 34 Copy.png">
                 <img class="athlets-image-4" src="img/Rectangle 34.png">
+            </section>
+            <section class="athlets-mobile">
+               
+                <div class="athlets-content-lv1">
+                    <div class="container">
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                          <!-- Indicators -->
+                          <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                          </ol>
+                      
+                          <!-- Wrapper for slides -->
+                          <div class="carousel-inner">
+                      
+                            <div class="carousel-item active">
+                              
+                              <div class="carousel-caption slide-container-1">
+                                <div class="athlets-text-lv0-0">01</div>
+                                <div class="athlets-text-lv0-2">CONNECTION</div>
+                                <div class="athlets-text-lv0-3">Connect with coaches directly, you can ping <br>coaches to view profile.</div>
+                              </div>
+                            </div>
+                      
+                            <div class="carousel-item slide-container">
+                              
+                              <div class="carousel-caption slide-container-2">
+                                <div class="athlets-text-lv1-0">02</div>
+                                <div class="athlets-text-lv1-1">COLLABORATION</div>
+                                <div class="athlets-text-lv1-2">Work with other student athletes to <br>increase visability. When you share and<br>like other players videos it will increase<br>your visability as a player. This is the<br>team work aspect to Surface 1.</div>
+                              </div>
+                            </div>
+                          
+                            <div class="carousel-item ">
+                              <div class="carousel-caption slide-container-3">
+                                <div class="athlets-text-lv2-0">03</div>
+                                <div class="athlets-text-lv2-1">GROWTH</div>
+                                <div class="athlets-text-lv2-2">Resources and tools for you to get<br>better as a student Athelte. Access to<br>training classes, tutor sessions, etc </div>
+                              </div>
+                            </div>
+                        
+                          </div>
+                      
+                         
+                        </div>
+                      </div>
+                </div>
+                
+                  
+                <div class="athlets-text-lv0-1">ATHLETS</div>
+                <img class="athlets-image-1" src="img/footballer.png">
+                <img class="athlets-image-2" src="img/Path 45.png">
+                <img class="athlets-image-3" src="img/Rectangle 34 Copy.png">
+                <img class="athlets-image-4" src="img/Rectangle 34.png">
+               
             </section>
             <section class="player-desktop">
                     <div class="player-text-lv0-0">01</div>
@@ -74,6 +165,67 @@
                     <img class="player-image-1" src="img/player.png">
                     <img class="player-image-3" src="img/Path 45 Copy-2.png">
             </section>
+            <section class="player-mobile">
+                    
+                    
+                    <div class="player-content-lv1">
+                        
+                            <div class="container">
+                                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                      <!-- Indicators -->
+                                      <ol class="carousel-indicators">
+                                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                                      </ol>
+                                  
+                                      <!-- Wrapper for slides -->
+                                      <div class="carousel-inner carousel-inner-1">
+                                  
+                                        <div class="carousel-item active carousel-item-1">
+                                          
+                                          <div class="carousel-caption slide-container-4">
+                                                <div class="player-text-lv0-0">01</div>
+                                                <div class="player-text-lv0-2">CONNECTION</div>
+                                                <div class="player-text-lv0-3">Connect with talented athlete directly, you can<br>watch their skills through video showreels<br>directly from Surface 1.</div>
+                                          </div>
+                                        </div>
+                                  
+                                        <div class="carousel-item carousel-item-1 ">
+                                          
+                                          <div class="carousel-caption slide-container-5">
+                                                <div class="player-text-lv1-0">02</div>
+                                                <div class="player-text-lv1-1">COLLABORATION</div>
+                                                <div class="player-text-lv1-2">Work with recruiter to increase your chances<br>of finding talented athlete.</div>
+                                          </div>
+                                        </div>
+                                      
+                                        <div class="carousel-item carousel-item-1">
+                                          <div class="carousel-caption slide-container-6">
+                                                <div class="player-text-lv2-0">03</div>
+                                                <div class="player-text-lv2-1">GROWTH</div>
+                                                <div class="player-text-lv2-2">Save your time, recruit proper athlets for your<br>team.</div>
+                                          </div>
+                                        </div>
+                                    
+                                      </div>
+                                  
+                                     
+                                    </div>
+                                  </div>
+                    </div>
+                   
+                       
+
+                   
+                    <div class="player-text-lv0-1">PLAYERS</div>
+                    <img class="player-image-2" src="img/Path 45-1.png">
+                    <img class="player-image-4" src="img/Rectangle 34 Copy-2.png">
+                    <img class="player-image-5" src="img/Rectangle 34-1.png">
+                    <img class="player-image-6" src="img/Rectangle 34-3.png">
+                    <img class="player-image-1" src="img/player.png">
+                    <img class="player-image-3" src="img/Path 45 Copy-2.png">
+            </section>
             <section class="beactive-desktop">
                 <img class="beactive-image" src="img/beActive.png">
                 <div class="beactive-box">
@@ -83,6 +235,15 @@
                 <div class="beactive-text-lv0-2">Post videos with your skills,Like and follow others to be<br>more popular.</div>
                 <img class="beactive-image-1" src="img/Rectangle 14.png">
             </section>
+            <section class="beactive-mobile">
+                    <img class="beactive-image" src="img/beActive-r.png">
+                    <div class="beactive-box">
+                        <div class="beactive-text-lv0-0">01</div>
+                    </div>
+                    <div class="beactive-text-lv0-1">BE ACTIVE</div>
+                    <div class="beactive-text-lv0-2">Post videos with your<br>skills , Like and follow others to<br> be more popular.</div>
+                    <img class="beactive-image-1" src="img/Rectangle 14.png">
+            </section>
             <section class="findcontact-desktop">
                     <img class="findcontact-image" src="img/findContact.png">
                     <div class="findcontact-box">
@@ -90,6 +251,15 @@
                     </div>
                     <div class="findcontact-text-lv0-1">FIND CONTACT</div>
                     <div class="findcontact-text-lv0-2">Contact others to find right coach or athlete you are looking<br>for. </div>
+                    <img class="findcontact-image-1" src="img/Rectangle 14.png">
+            </section>
+            <section class="findcontact-mobile">
+                    <img class="findcontact-image" src="img/findContact-r.png">
+                    <div class="findcontact-box">
+                        <div class="findcontact-text-lv0-0">02</div>
+                    </div>
+                    <div class="findcontact-text-lv0-1">FIND CONTACT</div>
+                    <div class="findcontact-text-lv0-2">Contact others to find right coach<br>or athlete you are looking for. </div>
                     <img class="findcontact-image-1" src="img/Rectangle 14.png">
             </section>
             <section class="workit-desktop">
@@ -101,20 +271,29 @@
                     <div class="workit-text-lv0-2">Enjoy being a student athlete, the recruiting<br>process can be overwhelming, we want to<br>make this a enjoyable experience. </div>
                     <img class="workit-image-1" src="img/Rectangle 14.png">
             </section>
+            <section class="workit-mobile">
+                    <img class="workit-image" src="img/work-it-r.png">
+                    <div class="workit-box">
+                        <div class="workit-text-lv0-0">03</div>
+                    </div>
+                    <div class="workit-text-lv0-1">WORK IT</div>
+                    <div class="workit-text-lv0-2">Enjoy being a student athlete, the<br>recruiting process can be <br>overwhelming, we want to make<br>this a enjoyable experience. </div>
+                    <img class="workit-image-1" src="img/Rectangle 14.png">
+            </section>
             <footer class="footer-desktop">
                 <img class="footer-image-1" src="img/icon.png">
                 <div class="footer-text-1">DOWNLOAD APP</div>
                 <div class="footer-text-2">SHOW EVERYONE WHAT YOU CAN DO!</div>
-                <div class="apple-container-1">
+                <a href="#" class="apple-container-1">
                         <img class="apple-image-1" src="img/Icon - Apple.png">
                         <div class="apple-text-1-1">DOWNLOAD ON THE</div>
                         <div class="apple-text-2-1">APP STORE</div>
-                </div>
-                <div class="android-container-1">
+                </a>
+                <a href="#" class="android-container-1">
                         <img class="android-image-1" src="img/Icon - Google Play.png">
                         <div class="android-text-1-1">GET IT ON</div>
                         <div class="android-text-2-1">GOOGLE PLAY</div>
-                </div>
+                </a>
                 <img class="footer-image-2" src="img/Fill 1.png">
                 <div class="social">
                         <img class="footer-image-3" src="img/fb.png">
@@ -125,8 +304,32 @@
                 <img class="footer-image-7" src="img/Path 14-5.png">
                 <div class="footer-text-3">Contact Us | Terms & Conditions</div>
             </footer>
+            <footer class="footer-mobile">
+                    <img class="footer-image-1" src="img/icon.png">
+                    <div class="footer-text-1">DOWNLOAD APP</div>
+                    <div class="footer-text-2">SHOW EVERYONE WHAT YOU CAN DO!</div>
+                    <a href="#" class="apple-container-3">
+                            <img class="apple-image-3" src="img/Icon - Apple.png">
+                            <div class="apple-text-3-1">DOWNLOAD ON THE</div>
+                            <div class="apple-text-3-2">APP STORE</div>
+                    </a>
+                    <a href="#" class="android-container-3">
+                            <img class="android-image-3" src="img/Icon - Google Play.png">
+                            <div class="android-text-3-1">GET IT ON</div>
+                            <div class="android-text-3-2">GOOGLE PLAY</div>
+                    </a>
+                    
+                    <div class="social">
+                            <img class="footer-image-3" src="img/fb.png">
+                            <img class="footer-image-4" src="img/twitter.png">
+                            <img class="footer-image-5" src="img/instagram.png">
+                    </div>
+                    <img class="footer-image-6" src="img/Path 14 Copy-5.png">
+                    <img class="footer-image-7" src="img/Rectangle 3-f.png">
+                    
+                </footer>
         </div>
-       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      
        <script src="js/script.js"></script>
     </body>    
 </html>

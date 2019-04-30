@@ -26,8 +26,12 @@ body, html{
     font-family: Proxima-Nova-Semi-Bold;
     src: url(../css/proxima_ssv/FontsFree-Net-Proxima-Nova-Sbold.otf);
 }
+a{
+    cursor: pointer;
+}
 /*header*/
-header{
+.header-desktop{
+    display: block;
     position: relative;
     width: 100%;
     height: 960px;
@@ -35,6 +39,9 @@ header{
     background-position: center;
     background-size:cover;
     background-repeat:no-repeat;
+}
+.header-mobile{
+    display: none;
 }
 .logo{
     position: absolute;
@@ -162,6 +169,13 @@ header{
 /*body*/
 /*athlets-desktop*/
 .athlets-desktop{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 950px;
+}
+.athlets-mobile{
+    display: none;
     position: relative;
     width: 100%;
     height: 950px;
@@ -306,9 +320,16 @@ header{
 }
 /*player*/
 .player-desktop{
+    display: block;
     position: relative;
     width: 100%;
     height: 980px;
+}
+.player-mobile{
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 565px;
 }
 .player-text-lv0-0{
     z-index: 100;
@@ -453,9 +474,16 @@ header{
 }
 /*beactive*/
 .beactive-desktop{
+    display: block;
     position: relative;
     width: 100%;
     height: 731px;
+}
+.beactive-mobile{
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 547px;
 }
 .beactive-image{
     position: absolute;
@@ -510,9 +538,16 @@ header{
 }
 /*findcontact*/
 .findcontact-desktop{
+    display: block;
     position: relative;
     width: 100%;
     height: 731px;
+}
+.findcontact-mobile{
+    display: none;
+    position: relative;
+    width: 320px;
+    height: 547px;
 }
 .findcontact-image{
     position: absolute;
@@ -567,9 +602,16 @@ header{
 }
 /*work it*/
 .workit-desktop{
+    display: block;
     position: relative;
     width: 100%;
     height: 731px;
+}
+.workit-mobile{
+    display: none;
+    position: relative;
+    width: 320px;
+    height: 547px;
 }
 .workit-image{
     position: absolute;
@@ -624,6 +666,7 @@ header{
 }
 /*footer*/
 .footer-desktop{
+    display: block;
     position: relative;
     width: 100%;
     height: 960px;
@@ -631,6 +674,12 @@ header{
     background-position: center;
     background-size:cover;
     background-repeat:no-repeat;
+}
+.footer-mobile{
+    display: none;
+    position: relative;
+    width: 320px;
+    height: 670px;
 }
 .apple-container-1{
     position: relative;
@@ -775,4 +824,856 @@ header{
     position: absolute;
     left: 1036px;
     top: 140xp
+}
+@media only screen and (max-width: 320px) {
+    /*header*/
+    .header-desktop{
+        display: none;
+    }
+    .header-mobile{
+        position: relative;
+        display: block;
+        width: 320px;
+        height: 568px;
+        background-image:url("../img/header\ image.png");
+        background-position: center;
+        background-size:cover;
+        background-repeat:no-repeat;
+    }
+    .header-text-2{
+        position: absolute;
+        top: 195px;
+        left: 9px;
+        width: 240px;
+        height: 39px;
+        font-size: 32px;
+    }
+    .logo{
+        position: absolute;
+        top: 39.5px;
+        left: calc(50% - 94.5px);
+    }
+    .header-text-3{
+        position: absolute;
+        top: 245px;
+        left: 66px;
+        width: 255px;
+        height: 74px;
+        font-size: 32px;
+    }
+    .stick{
+        position: absolute;
+        top: 170.21px;
+        left: 85.46px;
+    }
+    .apple-container{
+        position: absolute;
+        top: 434px;
+        left: 14px;
+        width: 142px;
+        height: 40px;
+    }
+    .apple-image{
+        position: absolute;
+        top: 11px;
+        left: 20px;
+        width: 14.57px;
+        height: 16.82px;
+    }
+    .apple-text-1{
+        width: 82px;
+        height: 10px;
+        position: absolute;
+        top: 11px;
+        left: 45px;
+        font-size: 8px;
+        font-family: Proxima-Nova-Regular;
+    }
+    .apple-text-2{
+        width: 46px;
+        height: 8px;
+        position: absolute;
+        top: 22px;
+        left: 45px;
+        font-size: 8px;
+        font-family: Proxima-Nova-Bold;
+    }
+    .android-container{
+        position: absolute;
+        top: 434px;
+        left: 164px;
+        width: 142px;
+        height: 40px;
+    }
+    .android-image{
+        position: absolute;
+        top: 11px;
+        left: 30px;
+        width: 16.39px;
+        height: 17.73px;
+    }
+    .android-text-1{
+        width: 82px;
+        height: 10px;
+        position: absolute;
+        top: 11px;
+        left: 55px;
+        font-size: 8px;
+        font-family: Proxima-Nova-Regular;
+    }
+    .android-text-2{
+        width: 54px;
+        height: 8px;
+        position: absolute;
+        top: 22px;
+        left: 55px;
+        font-size: 8px;
+        font-family: Proxima-Nova-Bold;
+    }
+    .header-sport-text-container-0{
+        position: absolute;
+        top: 516px;
+        left: 33px;
+        width: 253px;
+        height: 35px;
+    }
+    .header-sport-text-container-1{
+        width: 253px;
+        height: 15px;
+        margin-bottom: 5px;
+        font-family: Proxima-Nova-Regular;
+        color: #9071EA;
+        font-size: 12px;
+        display: flex;
+        justify-content: space-between;
+
+    }
+    .header-sport-text-container-2{
+        width: 253px;
+        height: 15px;
+        font-family: Proxima-Nova-Regular;
+        color: #9071EA;
+        font-size: 12px;
+        display: flex;
+        justify-content: space-around;
+    }
+    /*athlets*/
+    .athlets-desktop{
+        display: none;
+        position: relative;
+        width: 100%;
+        height: 536px;
+    }
+    .athlets-mobile{
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 537px;
+    }
+    .athlets-text-lv0-1{
+        z-index: -1;
+        top: 32px;
+        width: 211px;
+        height: 61px;
+        position: absolute;
+        left: 19px;
+        font-family: Proxima-Nova-Bold;
+        font-size: 50px;
+        color: #E7E7E7;
+    }
+    .athlets-image-1{
+        width: 200px;
+        height: 281px;
+        position: absolute;
+        top: 23px;
+        left: 70px;
+        z-index: 1600;
+    }
+    .athlets-image-2{
+        width: 178.89px;
+        height: 197.23px;
+        position: absolute;
+        top: 10px;
+        left: 68px;
+        z-index: 100;
+    }
+    .athlets-image-4{
+        position: absolute;
+        top: 57px;
+        left: 52px;
+        z-index: 100;
+    }
+    .athlets-image-3{
+        position: absolute;
+        top: 70px;
+        left: 74px;
+        z-index: 100;
+    }
+    .athlets-content-lv1{
+        position: absolute;
+        top: 253px;
+        left: 0;
+        width: 320px;
+        height: 284px;
+    }
+    .container{
+        padding-right: 0;
+        margin-right: 0;
+        margin-left: 0;
+        padding-left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .carousel-inner{
+        width: 320px;
+        height: 284px;
+    }
+    .item{
+        width: 320px;
+        height: 284px;
+    }
+    .athlets-text-lv0-0{
+        color: black;
+        z-index: 100;
+        font-size: 14px;
+        font-family: Proxima-Nova-Bold;
+        position: absolute;
+        top: 78px;
+        left: -33px;
+        width: 19px;
+        height: 5px;
+        border-radius: 5px;  
+        box-shadow: 0 20px 0 0 #603EBE;
+    }
+    .athlets-text-lv0-2{
+        position: absolute;
+        top: 101px;
+        left: -4px;
+        font-family: Proxima-Nova-Bold;
+        font-size: 28px;
+        color: #C2C2C2;
+        z-index: 1000;
+    }
+    .athlets-text-lv0-3{
+        z-index: 100;
+        position: absolute;
+        top: 122px;
+        left: -32px;
+        font-family: Proxima-Nova-Regular;
+        font-size: 15px;
+        color: black;
+        text-align: left;
+    }
+    .athlets-text-lv1-0{
+        color: black;
+        z-index: 100;
+        font-size: 14px;
+        font-family: Proxima-Nova-Bold;
+        position: absolute;
+        top: 78px;
+        left: -33px;
+        width: 19px;
+        height: 5px;
+        border-radius: 5px;  
+        box-shadow: 0 20px 0 0 #603EBE;
+    }
+    .athlets-text-lv1-1{
+        position: absolute;
+        top: 101px;
+        left: -4px;
+        font-family: Proxima-Nova-Bold;
+        font-size: 28px;
+        color: #C2C2C2;
+        z-index: 1000;
+    }
+    .athlets-text-lv1-2{
+        width: 302px;
+        height: 90px;
+        z-index: 100;
+        position: absolute;
+        top: 122px;
+        left: -32px;
+        font-family: Proxima-Nova-Regular;
+        font-size: 15px;
+        color: black;
+        text-align: left;
+    }
+    .athlets-text-lv2-0{
+        color: black;
+        z-index: 100;
+        font-size: 14px;
+        font-family: Proxima-Nova-Bold;
+        position: absolute;
+        top: 78px;
+        left: -33px;
+        width: 19px;
+        height: 5px;
+        border-radius: 5px;  
+        box-shadow: 0 20px 0 0 #603EBE;
+    }
+    .athlets-text-lv2-1{
+        position: absolute;
+        top: 101px;
+        left: -4px;
+        font-family: Proxima-Nova-Bold;
+        font-size: 28px;
+        color: #C2C2C2;
+        z-index: 1000;
+    }
+    .athlets-text-lv2-2{
+        width: 302px;
+        height: 90px;
+        z-index: 100;
+        position: absolute;
+        top: 122px;
+        left: -32px;
+        font-family: Proxima-Nova-Regular;
+        font-size: 15px;
+        color: black;
+        text-align: left;
+    }
+    .slide-container-1{
+        position: relative;
+    }
+    .slide-container-2{
+        position: relative;
+    }
+    .slide-container-3{
+        position: relative;
+    }
+    .carousel-indicators li {
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        background-color: #5C3CAF;
+    }
+    /*player*/
+    .player-desktop{
+        display: none;
+        position: relative;
+        width: 100%;
+        height: 980px;
+    }
+    .player-mobile{
+        position: relative;
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 565px;
+    }
+    .player-text-lv0-1{
+        z-index: -1;
+        top:79px;
+        width: 212px;
+        height: 61px;
+        position: absolute;
+        left: 17px;
+        font-family: Proxima-Nova-Bold;
+        font-size: 50px;
+        color: #E7E7E7;
+    }
+    .player-image-4{
+        position: absolute;
+        top: 100px;
+        left: 52px;
+    }
+    .player-image-5{
+        position: absolute;
+        top: 106px;
+        left: 74px;
+    }
+    .player-image-3{
+        position: absolute;
+        top: 207px;
+        left: 52px;
+        width: 106.35px;
+        height: 123.2px;
+    }
+    .player-image-2{
+        position: absolute;
+        top: 121px;
+        left: 200px;
+        width: 76.69px;
+        height: 89.84px;
+    }
+    .player-image-1{
+        width: 302px;
+        height: 249px;
+        position: absolute;
+        top: 101px;
+        left: 3px;
+    }
+    .player-content-lv1{
+        position: absolute;
+        top: 312px;
+        left: 0;
+        width: 100%;
+        height: 253px;
+    }
+    .slide-container-4{
+        position: relative;
+    }
+    .slide-container-5{
+        position: relative;
+    }
+    .slide-container-6{
+        position: relative;
+    }
+    .carousel-inner-1{
+        width: 100%;
+        height: 253px;
+    }
+    .carousel-item-1{
+        width: 100%;
+        height: 253px;
+    }
+    .player-text-lv0-0{
+        color: black;
+        z-index: 100;
+        font-size: 14px;
+        font-family: Proxima-Nova-Bold;
+        position: absolute;
+        top: 81px;
+        left: -33px;
+        width: 19px;
+        height: 5px;
+        border-radius: 5px;  
+        box-shadow: 0 20px 0 0 #603EBE;
+    }
+    .player-text-lv0-2{
+        position: absolute;
+        top:71px;
+        left: -4px;
+        font-family: Proxima-Nova-Bold;
+        font-size: 28px;
+        color: #C2C2C2;
+        z-index: 1000;
+    }
+    .player-text-lv0-3{
+        z-index: 100;
+        position: absolute;
+        top: 122px;
+        left: -32px;
+        font-family: Proxima-Nova-Regular;
+        font-size: 15px;
+        color: black;
+        text-align: left;
+    }
+    .player-text-lv1-0{
+        color: black;
+        z-index: 100;
+        font-size: 14px;
+        font-family: Proxima-Nova-Bold;
+        position: absolute;
+        top: 78px;
+        left: -33px;
+        width: 19px;
+        height: 5px;
+        border-radius: 5px;  
+        box-shadow: 0 20px 0 0 #603EBE;
+    }
+    .player-text-lv1-1{
+        position: absolute;
+        top: 71px;
+        left: -4px;
+        font-family: Proxima-Nova-Bold;
+        font-size: 28px;
+        color: #C2C2C2;
+        z-index: 1000;
+    }
+    .player-text-lv1-2{
+        width: 302px;
+        height: 90px;
+        z-index: 100;
+        position: absolute;
+        top: 122px;
+        left: -32px;
+        font-family: Proxima-Nova-Regular;
+        font-size: 15px;
+        color: black;
+        text-align: left;
+    }
+    .player-text-lv2-0{
+        color: black;
+        z-index: 100;
+        font-size: 14px;
+        font-family: Proxima-Nova-Bold;
+        position: absolute;
+        top: 78px;
+        left: -33px;
+        width: 19px;
+        height: 5px;
+        border-radius: 5px;  
+        box-shadow: 0 20px 0 0 #603EBE;
+    }
+    .player-text-lv2-1{
+        position: absolute;
+        top: 71px;
+        left: -4px;
+        font-family: Proxima-Nova-Bold;
+        font-size: 28px;
+        color: #C2C2C2;
+        z-index: 1000;
+    }
+    .player-text-lv2-2{
+        width: 302px;
+        height: 90px;
+        z-index: 100;
+        position: absolute;
+        top: 122px;
+        left: -32px;
+        font-family: Proxima-Nova-Regular;
+        font-size: 15px;
+        color: black;
+        text-align: left;
+    }
+    /*beactive*/
+    .beactive-desktop{
+        display: none;
+        position: relative;
+        width: 100%;
+        height: 731px;
+    }
+    .beactive-mobile{
+        display: block;
+        position: relative;
+        width: 320px;
+        height: 547px;
+    }
+    .beactive-image{
+        width: 320px;
+        height: 348px;
+    }
+    .beactive-box{
+        position: absolute;
+        top: 293px;
+        left: 19px;
+        width: 70px;
+        height: 70px;
+        background-color: #5E3DB3;
+    }
+    .beactive-text-lv0-0{
+        position: absolute;
+        top: 20px;
+        left: 27px;
+        color: white;
+        z-index: 100;
+        font-family: Proxima-Nova-Bold;
+        width: 16px;
+        height: 4px;
+        border-radius: 5px;  
+        box-shadow: 0 22px 0 0 #979797;
+        font-size: 14px;
+    }
+    .beactive-text-lv0-1{
+        z-index: -1;
+        top: 376px;
+        width: 139px;
+        height: 35px;
+        left: 18px;
+        position: absolute;
+        font-family: Proxima-Nova-Bold;
+        font-size: 28px;
+        color: #E7E7E7;
+    }
+    .beactive-text-lv0-2{
+        z-index: 100;
+        position: absolute;
+        top: 435px;
+        left: 18px;
+        font-family: Proxima-Nova-Regular;
+        font-size: 16px;
+    }
+    .beactive-image-1{
+        position: absolute;
+        top: 519px;
+        left: 18px;
+    }
+    /*findcontact*/
+    .findcontact-desktop{
+        display: none;
+        position: relative;
+        width: 100%;
+        height: 731px;
+    }
+    .findcontact-mobile{
+        display: block;
+        position: relative;
+        width: 320px;
+        height: 547px;
+    }
+    .findcontact-image{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 320px;
+        height: 348px;
+    }
+    .findcontact-box{
+        position: absolute;
+        top: 293px;
+        left: 19px;
+        width: 70px;
+        height: 70px;
+        background-color: #5E3DB3;
+    }
+    .findcontact-text-lv0-0{
+        position: absolute;
+        top: 20px;
+        left: 27px;
+        color: white;
+        z-index: 100;
+        font-family: Proxima-Nova-Bold;
+        width: 16px;
+        height: 4px;
+        border-radius: 5px;  
+        box-shadow: 0 22px 0 0 #979797;
+        font-size: 14px;
+    }
+    .findcontact-text-lv0-1{
+        z-index: -1;
+        top: 376px;
+        width: 201px;
+        height: 35px;
+        left: 18px;
+        position: absolute;
+        font-family: Proxima-Nova-Bold;
+        font-size: 28px;
+        color: #E7E7E7;
+    }
+    .findcontact-text-lv0-2{
+        z-index: 100;
+        position: absolute;
+        top: 435px;
+        left: 18px;
+        font-family: Proxima-Nova-Regular;
+        font-size: 16px;
+    }
+    .findcontact-image-1{
+        position: absolute;
+        top: 519px;
+        left: 18px;
+    }
+    /*workit*/
+    .workit-desktop{
+        display: none;
+        position: relative;
+        width: 100%;
+        height: 731px;
+    }
+    .workit-mobile{
+        display: block;
+        position: relative;
+        width: 320px;
+        height: 572px;
+    }
+    .workit-image{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 320px;
+        height: 348px;
+    }
+    .workit-box{
+        position: absolute;
+        top: 293px;
+        left: 19px;
+        width: 70px;
+        height: 70px;
+        background-color: #5E3DB3;
+    }
+    .workit-text-lv0-0{
+        position: absolute;
+        top: 20px;
+        left: 27px;
+        color: white;
+        z-index: 100;
+        font-family: Proxima-Nova-Bold;
+        width: 16px;
+        height: 4px;
+        border-radius: 5px;  
+        box-shadow: 0 22px 0 0 #979797;
+        font-size: 14px;
+    }
+    .workit-text-lv0-1{
+        z-index: -1;
+        top: 376px;
+        width: 201px;
+        height: 35px;
+        left: 18px;
+        position: absolute;
+        font-family: Proxima-Nova-Bold;
+        font-size: 28px;
+        color: #E7E7E7;
+    }
+    .workit-text-lv0-2{
+        z-index: 100;
+        position: absolute;
+        top: 435px;
+        left: 18px;
+        font-family: Proxima-Nova-Regular;
+        font-size: 16px;
+    }
+    .workit-image-1{
+        position: absolute;
+        top: 543px;
+        left: 18px;
+    }
+    /*footer*/
+    .footer-desktop{
+        display: none;
+    }
+    .footer-mobile{
+        display: block;
+        position: relative;
+        width: 320px;
+        height: 670px;
+        background-image:url("../img/footerBG.png");
+        background-position: center;
+        background-size:cover;
+        background-repeat:no-repeat;
+    }
+    .footer-image-1{
+        width: 88px;
+        height: 80px;
+        position: absolute;
+        top: 95px;
+        left: 116px;
+    }
+    .footer-text-1{
+        z-index: 1000;
+        position: absolute;
+        left: 18px;
+        top: 222px;
+        width: 285px;
+        height: 42px;
+        color: white;
+        font-family: Proxima-Nova-Semi-Bold;
+        display: flex;
+        align-items: center;
+        font-size: 34px;
+    }
+    .footer-text-2{
+        z-index: 1000;
+        position: absolute;
+        left: 18px;
+        top: 264px;
+        width: 274px;
+        height: 19px;
+        color: #A496CA;
+        font-family: Proxima-Nova-Semi-Bold;
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+    }
+    .footer-image-6{
+        position: absolute;
+        top: 222px;
+        left: 18px;
+        width: 58.72px;
+        height: 67.42px;
+    }
+    .footer-image-7{
+        position: absolute;
+        top: 189px;
+        left: 146px;
+    }
+    .apple-container-3{
+        border-radius: 100px;
+        background-color: #5C3CAF;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        position: absolute;
+        position: absolute;
+        top: 434px;
+        left: 14px;
+        width: 142px;
+        height: 40px;
+    }
+    .apple-image-3{
+        position: absolute;
+        top: 11px;
+        left: 20px;
+        width: 14.57px;
+        height: 16.82px;
+    }
+    .apple-text-3-1{
+        color: white;
+        width: 82px;
+        height: 10px;
+        position: absolute;
+        top: 11px;
+        left: 45px;
+        font-size: 8px;
+        font-family: Proxima-Nova-Regular;
+    }
+    .apple-text-3-2{
+        color: white;
+        width: 46px;
+        height: 8px;
+        position: absolute;
+        top: 22px;
+        left: 45px;
+        font-size: 8px;
+        font-family: Proxima-Nova-Bold;
+    }
+    .android-container-3{
+        border-radius: 100px;
+        background-color: #5C3CAF;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        position: absolute;
+        top: 434px;
+        left: 164px;
+        width: 142px;
+        height: 40px;
+    }
+    .android-image-3{
+        position: absolute;
+        top: 11px;
+        left: 30px;
+        width: 16.39px;
+        height: 17.73px;
+    }
+    .android-text-3-1{
+        color: white;
+        width: 82px;
+        height: 10px;
+        position: absolute;
+        top: 11px;
+        left: 55px;
+        font-size: 8px;
+        font-family: Proxima-Nova-Regular;
+    }
+    .android-text-3-2{
+        color: white;
+        width: 54px;
+        height: 8px;
+        position: absolute;
+        top: 22px;
+        left: 55px;
+        font-size: 8px;
+        font-family: Proxima-Nova-Bold;
+    }
+    .social{
+        position: absolute;
+        top: 620px;
+        left: 98px;
+        width: 124px;
+        height: 18px;
+    }
+    .footer-image-3{
+        float: left;
+        margin-right: 30px;
+    }
+    .footer-image-4{
+        float: left;
+        margin-top: 2px;
+        margin-right: 27px;
+    }
+    .footer-image-5{
+        float: left;
+    }
 }
