@@ -1,5 +1,5 @@
 /*navigation bar*/
-.navigation-login{
+.navigation-register{
     display: block;
     position: relative;
     width: 100%;
@@ -14,26 +14,26 @@
     float: left;
     margin-top: 20px;
 }
-.navigation-login-1{
+.navigation-register-1{
     float: left;
     font-size: 16px;
     color: black;
 }
-/*login*/
-.login-desktop{
+/*register*/
+.register-desktop{
     position: relative;
     width: 100%;
     height: 650px;
 }
-.login-image{
+.register-image{
     height: 600px;
-    background-image: url(../img/street-food.jpg);
+    background-image: url(../img/banner-experts.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
-.login-form{
+.register-form{
     position: absolute;
     top: 100px;
     right: 10%;
@@ -45,7 +45,7 @@
 }
   
   /* Full-width input fields */
-  .login-form>input[type=text], input[type=password] {
+  .register-form>input[type=text], input[type=password] {
     width: 100%;
     padding: 15px;
     margin: 5px 0 22px 0;
@@ -53,15 +53,15 @@
     background: #f1f1f1;
   }
   
-  .login-form>input[type=text]:focus, input[type=password]:focus {
+  .register-form>input[type=text]:focus, input[type=password]:focus {
     background-color: #ddd;
     outline: none;
   }
   
   /* Set a style for the submit button */
-  .btn-login {
+  .btn-register {
     position: absolute;
-    top: 270px;
+    top: 332px;
     left: calc(50% - 75px);
     background-color: red;
     color: white;
@@ -72,10 +72,10 @@
     opacity: 0.9;
   }
   
-  .btn-login:hover {
+  .btn-register:hover {
     opacity: 1;
   }
-  .login-word{
+  .register-word{
       list-style-type: disc;      
       list-style-position: inside; 
       position: absolute;
@@ -84,10 +84,11 @@
       color: white;
       text-transform: uppercase;
   }
-  .login-word-1{
+  .register-word-1{
+      display: block;
     font-size: 32px;
 }
-.login-word-2:before{
+.register-word-2:before{
     content:"• ";
 }
 .error-1{
@@ -98,15 +99,25 @@
 }
 .error-2{
     position: absolute;
-    top: 210px;
-    left: -7px;
+    top: 211px;
+    left: 46px;
     color: red;
-    width: 290px;
-    height: 100px;
+    width: 238px;
+    height: 46px;
     text-align: end;
 }
-@media (max-width:1200px){
-    .login-word{
+.donator-form{
+    position: absolute;
+    top: 239px;
+    left: 16px;
+}
+.partner-form{
+    position: absolute;
+    top: 276px;
+    left: 16px;
+}
+@media (max-width:1532px){
+    .register-word{
         display: none;
     }
 }
