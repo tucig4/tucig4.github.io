@@ -43,9 +43,12 @@ a{
 .header-mobile{
     display: none;
 }
+.header-tablet{
+    display: none;
+}
 .logo{
     position: absolute;
-    left: 195px;
+    left: calc(12.075% - 94.5px);
     top: 54.114px;
 }
 .header-text-1{
@@ -53,7 +56,7 @@ a{
     font-family: Proxima-Nova-Regular;
     font-size: 14px;
     top: 62px;
-    left: 1528px;
+    left: calc(79.583% - 98.5px);
     width: 197px;
     height: 18px;
     color: white;
@@ -61,14 +64,14 @@ a{
 .stick{
     position: absolute;
     top: 304px;
-    left: 543px;
+    left: calc(28.28125% - 125px);
     z-index: 10;
 }
 .header-text-2{
     font-family: Proxima-Nova-Bold;
     position: absolute;
     top: 367px;
-    left: 190px;
+    left: 9.89583%;
     color: white;
     z-index: 100;
     width: 672px;
@@ -79,7 +82,7 @@ a{
     font-family: Proxima-Nova-Bold;
     position: absolute;
     top: 572px;
-    left: 647px;
+    left: 33.698%;
     color: white;
     z-index: 100;
     width: 1076px;
@@ -89,7 +92,7 @@ a{
 .header-sport-text-container{
     position: relative;
     top: 578px;
-    left: 1114px;
+    left: 58.02%;
     font-family: Proxima-Nova-Regular;
     color: #9071EA;
     width: 528px;
@@ -99,9 +102,9 @@ a{
     font-size: 14px;
 }
 .apple-container{
-    position: relative;
-    top: 773px;
-    left: 621px;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 311px;
     height: 77px;
     border-radius: 100px;
@@ -132,10 +135,17 @@ a{
     color: white;
     font-size: 14px;
 }
-.android-container{
+.store{
     position: relative;
-    top: 696px;
-    left: 1002px;
+    top: 773px;
+    left: 32.34375% ;
+    width: 672px;
+    height: 77px;
+}
+.android-container{
+    position: absolute;
+    top: 0;
+    left: 381px;
     width: 311px;
     height: 77px;
     border-radius: 100px;
@@ -290,32 +300,39 @@ a{
     font-size: 20px;
     color: white;
 }
+.athlets-image-container{
+    position: relative;
+    top: 39px;
+    left: 16.67%;
+    width: 678px;
+    height: 950px;
+}
 .athlets-image-2{
     z-index: 1000;
     position: absolute;
-    top: 68px;
-    left: 305px;
+    top: 13px;
+    left: -2px;
     width: 574.87px;
     height: 641.96px;
 }
 .athlets-image-4{
     position: absolute;
-    top: 148px;
-    left: 392px;
+    top: 108px;
+    left: 0px;
     width: 15px;
     height: 15px;
 }
-.athlets-image-3{
+.athlets-image-3 {
     position: absolute;
-    top: 156px;
-    left: 414px;
+    top: 115px;
+    left: 15px;
     width: 15px;
     height: 15px;
 }
 .athlets-image-1{
     position: absolute;
-    top: 39px;
-    left: 320px;
+    top: 0;
+    left: 0;
     z-index: 1600;
 }
 /*player*/
@@ -441,35 +458,40 @@ a{
     font-size: 20px;
     color: white;
 }
+.player-image-container{
+    position: relative;
+    top: -18px;
+    left: 41.875%;
+}
 .player-image-2{
     position: absolute;
     top: 63px;
-    left: 1465px;
+    left: 670px;
 }
 .player-image-3{
     position: absolute;
     top: 440px;
-    left: 989px;
+    left: 200px;
 }
 .player-image-5{
     position: absolute;
     top: 113px;
-    left: 1098px;
+    left: 300px;
 }
 .player-image-4{
     position: absolute;
     top: 130px;
-    left: 1120px;
+    left: 320px;
 }
 .player-image-6{
     position: absolute;
     top: 383px;
-    left: 1578px;
+    left: 500px;
 }
 .player-image-1{
     position: absolute;
-    top: -18px;
-    left: 804px;
+    top: 0;
+    left: 0;
     z-index: 1000;
 }
 /*beactive*/
@@ -681,10 +703,17 @@ a{
     width: 320px;
     height: 670px;
 }
-.apple-container-1{
+.store-footer{
     position: relative;
     top: 515px;
-    left: 621px;
+    left: 32.34375%;
+    width: 672px;
+    height: 77px;
+}
+.apple-container-1{
+    position: absolute;
+    top: 0px;
+    left: 0px;
     width: 311px;
     height: 77px;
     border-radius: 100px;
@@ -716,9 +745,9 @@ a{
     font-size: 14px;
 }
 .android-container-1{
-    position: relative;
-    top: 438px;
-    left: 1002px;
+    position: absolute;
+    top: 0;
+    left: 381px;
     width: 311px;
     height: 77px;
     border-radius: 100px;
@@ -752,17 +781,17 @@ a{
 .footer-image-2{
     position: absolute;
     top: 860px;
-    left: 48px;
+    left: 2.5%;
 }
 .footer-image-1{
     position: absolute;
     top:224px;
-    left:491px;
+    left:25.57%;
 }
 .footer-text-1{
     z-index: 1000;
     position: absolute;
-    left: 667px;
+    left: 34.74%;
     top: 210px;
     width: 760px;
     height: 110px;
@@ -775,7 +804,7 @@ a{
 .footer-text-2{
     z-index: 1000;
     position: absolute;
-    left: 667px;
+    left: 34.74%;
     top: 331px;
     width: 656px;
     height: 44px;
@@ -788,7 +817,7 @@ a{
 .footer-text-3{
     position: absolute;
     top: 866px;
-    left: 1550px;
+    left: 80.729%;
     font-size: 20px;
     color: white;
     font-family: Proxima-Nova-Regular;
@@ -798,7 +827,7 @@ a{
 .social{
     position: absolute;
     top: 862px;
-    left: 888px;
+    left: 46.25%;
     width: 137px;
     height: 27px;
 }
@@ -817,17 +846,20 @@ a{
     z-index: 10;
     position: absolute;
     top: 210px;
-    left: 697px;
+    left: 36.30%;
 }
 .footer-image-7{
     z-index: 10;
     position: absolute;
-    left: 1036px;
+    left: 53.96%;
     top: 140xp
 }
 @media only screen and (max-width: 320px) {
     /*header*/
     .header-desktop{
+        display: none;
+    }
+    .header-tablet{
         display: none;
     }
     .header-mobile{
@@ -1676,4 +1708,154 @@ a{
     .footer-image-5{
         float: left;
     }
+}
+@media only screen and (max-width: 768px) and (min-width: 320px){
+    /*header*/
+    .header-desktop{
+        display: none;
+    }
+    .header-mobile{
+        display: none;
+    }
+    .header-tablet{
+        position: relative;
+        display: block;
+        width: 768px;
+        height: 960px;
+        background-image:url("../img/header\ image.png");
+        background-position: center;
+        background-size:cover;
+        background-repeat:no-repeat;
+    }
+    .logo{
+        position: absolute;
+        left: 2.6%;
+        top: 54.114px;
+    }
+    .header-text-1{
+        position: absolute;
+        font-family: Proxima-Nova-Regular;
+        font-size: 14px;
+        top: 62px;
+        left: 50%;
+        width: 197px;
+        height: 18px;
+        color: white;
+    }
+    .stick{
+        position: absolute;
+        top: 304px;
+        left: 33.59%;
+        z-index: 10;
+    }
+    .header-text-2{
+        font-family: Proxima-Nova-Bold;
+        position: absolute;
+        top: 367px;
+        left: 9.89583%;
+        color: white;
+        z-index: 100;
+        width: 672px;
+        height: 110px;
+        font-size: 64px;
+    }
+    .header-text-3{
+        font-family: Proxima-Nova-Bold;
+        position: absolute;
+        top: 572px;
+        left: 33.698%;
+        color: white;
+        z-index: 100;
+        width: 1076px;
+        height: 110px;
+        font-size: 64px;
+    }
+    .header-sport-text-container{
+        position: relative;
+        top: 578px;
+        left: 58.02%;
+        font-family: Proxima-Nova-Regular;
+        color: #9071EA;
+        width: 528px;
+        height: 18px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+    }
+    .apple-container{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 311px;
+        height: 77px;
+        border-radius: 100px;
+        background-color: #5C3CAF;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+    }
+    .apple-image{
+        position: absolute;
+        top: 19px;
+        left: 44px;
+        width: 32px;
+        height: 37px;
+    }
+    .apple-text-1{
+        position: absolute;
+        top: 22px;
+        left: 105px;
+        color: white;
+        font-size: 14px;
+    }
+    .apple-text-2{
+        font-family: Proxima-Nova-Semi-Bold;
+        position: absolute;
+        top: 41px;
+        left: 105px;
+        color: white;
+        font-size: 14px;
+    }
+    .store{
+        position: relative;
+        top: 773px;
+        left: 32.34375% ;
+        width: 672px;
+        height: 77px;
+    }
+    .android-container{
+        position: absolute;
+        top: 0;
+        left: 381px;
+        width: 311px;
+        height: 77px;
+        border-radius: 100px;
+        background-color: #5C3CAF;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+    }
+    .android-image{
+        position: absolute;
+        top: 19px;
+        left: 44px;
+        width: 32px;
+        height: 37px;
+    }
+    .android-text-1{
+        position: absolute;
+        top: 22px;
+        left: 105px;
+        color: white;
+        font-size: 14px;
+    }
+    .android-text-2{
+        font-family: Proxima-Nova-Semi-Bold;
+        position: absolute;
+        top: 41px;
+        left: 105px;
+        color: white;
+        font-size: 14px;
+    }
+
 }
