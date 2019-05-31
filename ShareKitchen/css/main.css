@@ -191,7 +191,7 @@ a{
 }
 .form-search{
     position: absolute;
-    width: 100%;
+    width: 100px;
     height: 40px;
     left:calc(100% - 284px);
 }
