@@ -1,3 +1,5 @@
+var tools=[];
+var locations=[];
 $('.type-image').click(function(){
     $('.type-box').toggle();
 });
@@ -34,25 +36,34 @@ function GetSelected_1() {
 
     //Reference the CheckBoxes in Table.
     var checkBoxes = grid.getElementsByTagName("input");
-    var message = "ID.....Ảnh.....Miêu tả.....Trạng thái....Số lượng....Giá trên thị trường.....Tổng tiền";
 
     //Loop through the CheckBoxes.
     for (var i = 1; i < checkBoxes.length; i++) {
+        let object={
+            id:"",
+            imageURL:"",
+            amount:"",
+            price:"",
+            totalPrice:"",
+        };
         if (checkBoxes[i].checked) {
             var row = checkBoxes[i].parentNode.parentNode;
-            message += row.cells[0].innerHTML;
-            message += "   " + row.cells[1].innerHTML;
-            message += "   " + row.cells[2].innerHTML;
-            message += "   " + row.cells[3].innerHTML;
-            message += "   " + row.cells[4].innerHTML;
-            message += "   " + row.cells[5].innerHTML;
-            message += "   " + row.cells[6].innerHTML;
-            message += "\n";
+           
+            object.id=row.cells[0].innerHTML;
+            
+            object.imageURL=row.cells[1].innerHTML;
+           
+            object.amount=row.cells[4].innerHTML;
+            
+            object.price=row.cells[5].innerHTML;
+           
+            object.totalPrice=row.cells[6].innerHTML;
+          
+            tools.push(object);
         }
     }
-
-    //Display selected Row data in Alert Box.
-    alert(message);
+    localStorage.setItem("tools", JSON.stringify(tools));
+    
 }
 
 function GetSelected_2() {
@@ -61,22 +72,28 @@ function GetSelected_2() {
 
     //Reference the CheckBoxes in Table.
     var checkBoxes = grid.getElementsByTagName("input");
-    var message = "ID......Miêu tả.....Trạng thái....Địa chỉ....Thời gian từ.....Giá cho thuê";
 
     //Loop through the CheckBoxes.
     for (var i = 1; i < checkBoxes.length; i++) {
+        let object={
+            id:"",
+            address:"",
+            time:"",
+            price:"",
+        };
         if (checkBoxes[i].checked) {
             var row = checkBoxes[i].parentNode.parentNode;
-            message += row.cells[0].innerHTML;
-            message += "   " + row.cells[1].innerHTML;
-            message += "   " + row.cells[2].innerHTML;
-            message += "   " + row.cells[3].innerHTML;
-            message += "   " + row.cells[4].innerHTML;
-            message += "   " + row.cells[5].innerHTML;
-            message += "\n";
+            
+            object.id=row.cells[0].innerHTML;
+            
+            object.address=row.cells[3].innerHTML;
+           
+            object.time=row.cells[4].innerHTML;
+           
+            object.price=row.cells[5].innerHTML;
+        
+            locations.push(object);
         }
     }
-
-    //Display selected Row data in Alert Box.
-    alert(message);
+    localStorage.setItem("locations", JSON.stringify(locations));
 }

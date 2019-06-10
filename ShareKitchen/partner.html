@@ -21,8 +21,8 @@
            <header class="desktop-header">
                <div class="header-lv1">
                    <div class="log-in-container">
-                       <a href="login.html" class="headerWord-2 border-1">ĐĂNG NHẬP</a>
-                       <a href="register.html" class="headerWord-2">ĐĂNG KÝ</a>
+                        <a href="login.html" class="headerWord-2 border-1"><span class="fix">ĐĂNG NHẬP</span></a>
+                        <a href="register.html" class="headerWord-2"><span class="fix">ĐĂNG KÝ</span></a>
                    </div>
                </div>
                <hr>
@@ -37,8 +37,8 @@
                         <div class="dropdown-1">
                           <button class="dropbtn-1"><a href="foodanddrink.html">THỨC ĂN & ĐỒ UỐNG</a></button>
                           <div class="dropdown-content-1">
-                            <a href="#">THỨC ĂN</a>
-                            <a href="#">ĐỒ UỐNG</a>
+                            <a href="foodanddrink.html">THỨC ĂN</a>
+                            <a href="foodanddrink.html">ĐỒ UỐNG</a>
                           </div>
                         </div>
                         <a href="partner.html">ĐỐI TÁC</a> 
@@ -50,9 +50,11 @@
                 <form class="form-search">
                     <input class="searchBar" type="text" placeholder="Tìm kiếm">
                 </form>    
-                <div class="addToCart">
-                    <img class="addToCartSVG" src="img/shopping-cart.svg">
-                </div>
+                <a href="addtocart.html" class="addToCart">
+                        <div class="addToCart">
+                            <img class="addToCartSVG" src="img/shopping-cart.svg">
+                        </div>
+                        </a>
             </div>
            </header>
            <header class="mobile-header">
@@ -69,8 +71,8 @@
                         <li><a href="about.html">GIỚI THIỆU</a></li>
                         <li><a href="foodanddrink.html" class="m-drinkandfood">THỨC ĂN & ĐỒ UỐNG</a>
                            <ul>
-                             <li><a href="#">THỨC ĂN</a></li>
-                             <li><a href="#">ĐỒ UỐNG</a></li>
+                             <li><a href="foodanddrink.html">THỨC ĂN</a></li>
+                             <li><a href="foodanddrink.html">ĐỒ UỐNG</a></li>
                            </ul>
                         </li>
                         <li><a href="partner.html">ĐỐI TÁC</a>
@@ -88,9 +90,11 @@
                 <div class="logo">
                     <span class="logoWord">SK</span>
                 </div>
-                <div class="addToCart">
-                    <img class="addToCartSVG" src="img/shopping-cart.svg">
-                </div>
+                <a href="addtocart.html" class="addToCart">
+                        <div class="addToCart">
+                            <img class="addToCartSVG" src="img/shopping-cart.svg">
+                        </div>
+                        </a>
            </header>
            <section class="image-partner-container">
                 <div class="word-partner-1">CHÚNG TÔI CẦN BẠN</div>
@@ -268,8 +272,8 @@
                 </table>
                 </div>
                 <div class="outer-btn">
-                <button class="cooperate-partner one" onclick="GetSelected_1();"><a class="button-a" href="#">HỢP TÁC</a></button>
-                <button class="cooperate-partner two" onclick="GetSelected_2();" style="display: none"><a class="button-a" href="#">HỢP TÁC</a></button>
+                <button class="cooperate-partner one" onclick="GetSelected_1(); GetSelected_2();"><a class="button-a" href="partnerandonator.html">HỢP TÁC</a></button>
+                <button class="cooperate-partner two" onclick="GetSelected_1(); GetSelected_2();" style="display: none"><a class="button-a" href="partnerandonator.html">HỢP TÁC</a></button>
                 </div>
            </section>
                <footer class="footer-desktop">

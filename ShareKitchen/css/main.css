@@ -49,9 +49,11 @@ body, html {
     justify-content: center;
 }
 .headerWord-2{
-    cursor: pointer;
-    margin-right: 10px; 
+    cursor: pointer; 
     font-size: 16px;
+    color: white;
+}
+.fix{
     color: white;
 }
 .log-in-container{

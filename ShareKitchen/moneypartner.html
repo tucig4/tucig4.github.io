@@ -21,8 +21,8 @@
            <header class="desktop-header">
                <div class="header-lv1">
                    <div class="log-in-container">
-                       <a href="login.html" class="headerWord-2 border-1">ĐĂNG NHẬP</a>
-                       <a href="register.html" class="headerWord-2">ĐĂNG KÝ</a>
+                        <a href="login.html" class="headerWord-2 border-1"><span class="fix">ĐĂNG NHẬP</span></a>
+                        <a href="register.html" class="headerWord-2"><span class="fix">ĐĂNG KÝ</span></a>
                    </div>
                </div>
                <hr>
@@ -50,9 +50,11 @@
                 <form class="form-search">
                     <input class="searchBar" type="text" placeholder="Tìm kiếm">
                 </form>    
-                <div class="addToCart">
-                    <img class="addToCartSVG" src="img/shopping-cart.svg">
-                </div>
+                <a href="addtocart.html" class="addToCart">
+                        <div class="addToCart">
+                            <img class="addToCartSVG" src="img/shopping-cart.svg">
+                        </div>
+                        </a>
             </div>
            </header>
            <header class="mobile-header">
@@ -69,8 +71,8 @@
                         <li><a href="about.html">GIỚI THIỆU</a></li>
                         <li><a href="foodanddrink.html" class="m-drinkandfood">THỨC ĂN & ĐỒ UỐNG</a>
                            <ul>
-                             <li><a href="#">THỨC ĂN</a></li>
-                             <li><a href="#">ĐỒ UỐNG</a></li>
+                             <li><a href="foodanddrink.html">THỨC ĂN</a></li>
+                             <li><a href="foodanddrink.html">ĐỒ UỐNG</a></li>
                            </ul>
                         </li>
                         <li><a href="partner.html">ĐỐI TÁC</a>
@@ -88,9 +90,11 @@
                 <div class="logo">
                     <span class="logoWord">SK</span>
                 </div>
-                <div class="addToCart">
-                    <img class="addToCartSVG" src="img/shopping-cart.svg">
-                </div>
+                <a href="addtocart.html" class="addToCart">
+                        <div class="addToCart">
+                            <img class="addToCartSVG" src="img/shopping-cart.svg">
+                        </div>
+                        </a>
            </header>
            <section class="navigation-partnerandonator">
             <a href="index.html" class="navigation-home-1">TRANG CHỦ</a>
@@ -108,14 +112,14 @@
                         <div class="form-moneypartner-content-1">
                         <label class="moneypartner-form-checkbox"><input type="checkbox" checked="checked" name="Bằng tiền"> BẰNG TIỀN</label>
                         <br>
-                        <label for="amount"><b>Số tiền (VND)</b></label>
+                        <label for="amount">Số tiền (VND)</label>
                         <br>
                         <input min="0" type="number" placeholder="0" name="amount" id="amount">
                         </div>
                         <div class="form-moneypartner-content-2">
                         <label class="moneypartner-form-checkbox"><input type="checkbox" checked="checked" name="Bằng tiền"> BẰNG DỤNG CỤ</label>
                         <br>
-                        <label for="time"><b>Thời gian chuyển đến </b></label>
+                        <label for="time">Thời gian chuyển đến</label>
                         <br>
                         <input type="date" name="amount" id="time-input">
                         </div>
@@ -172,6 +176,7 @@
        </div>
       
        <script src="js/main.js"></script>
+       <script src="js/moneypartner.js"></script>
        </body>    
 </html>
 
