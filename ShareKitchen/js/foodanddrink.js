@@ -178,7 +178,7 @@ function clickCheckBox2(){
         
         for(let i=0;i<arrOne.length;i++){
             $('.shop-container').append("<div class='row classTwo tap'>"+"<div class='shop-items five food'>"
-            +"<img class='nuocchanh-image' src="+arrOne[i].imageURL+">"
+            +"<img class=' image-lag' src="+arrOne[i].imageURL+">"
             +"<div class='shop-item-details'>"
             +"<span class='shop-item-title'>"
             +arrOne[i].title
@@ -195,7 +195,43 @@ function clickCheckBox2(){
             );
         }
         count1=true;
+        $('.image-lag').each(function(){
+            if($(this).attr('src')==='img/to-pho-truyen-thong.jpg'){
+                $(this).addClass('pho-image');
+            }
+            if($(this).attr('src')==='img/nuoc-chanh-tuoi.jpg'){
+                $(this).addClass('nuocchanh-image');
+            }
+            if($(this).attr('src')==='img/tumblr_otkk1qL0P71uyxczto1_500.png'){
+                $(this).addClass('bunbo-image');
+            }
+            if($(this).attr('src')==='img/Tra-Sua-Khoai-Mon.png'){
+                $(this).addClass('bunbo-image');
+            }
+            if($(this).attr('src')==='img/Spaghetti-PNG-Transparent-Image.png'){
+                $(this).addClass('spaghetti-image');
+            }
+            if($(this).attr('src')==='img/Download-Hamburger-Transparent-Background.png'){
+                $(this).addClass('spaghetti-image');
+            }
+            if($(this).attr('src')==='img/fried-chicken-png-11552945573sn657hxomw.png'){
+                $(this).addClass('friedchicken-image');
+            }
+            if($(this).attr('src')==='img/ice_cream_PNG5096.png'){
+                $(this).addClass('icecream-image');
+            }
+            if($(this).attr('src')==='img/comtam.jpg'){
+                $(this).addClass('comtam-image');
+            }
+          });
+        
     }else{
+        $('.shop-container').css({
+            'display':'block',  
+            'grid-template-columns':'none',
+            'grid-gap':'none',
+            'justify-content':'none',
+        });
         $('.shop-items').show();
     }
 
@@ -237,13 +273,13 @@ function clickCheckBox3(){
         console.log(arrOne);
         $('.shop-container').css({
             'display':'grid',
-            'grid-template-columns':'repeat(3,400px)',
+            'grid-template-columns':'repeat(1,400px)',
             'grid-gap':'0',
             'justify-content':'center',  
         });
         for(let i=0;i<arrOne.length;i++){
             $('.shop-container').append("<div class='row classThree tap'>"+"<div class='shop-items five food'>"
-            +"<img class='nuocchanh-image' src="+arrOne[i].imageURL+">"
+            +"<img class='image-lag' src="+arrOne[i].imageURL+">"
             +"<div class='shop-item-details'>"
             +"<span class='shop-item-title'>"
             +arrOne[i].title
@@ -259,8 +295,43 @@ function clickCheckBox3(){
             +"</div>"
             );
         }
+        $('.image-lag').each(function(){
+            if($(this).attr('src')==='img/to-pho-truyen-thong.jpg'){
+                $(this).addClass('pho-image');
+            }
+            if($(this).attr('src')==='img/nuoc-chanh-tuoi.jpg'){
+                $(this).addClass('nuocchanh-image');
+            }
+            if($(this).attr('src')==='img/tumblr_otkk1qL0P71uyxczto1_500.png'){
+                $(this).addClass('bunbo-image');
+            }
+            if($(this).attr('src')==='img/Tra-Sua-Khoai-Mon.png'){
+                $(this).addClass('bunbo-image');
+            }
+            if($(this).attr('src')==='img/Spaghetti-PNG-Transparent-Image.png'){
+                $(this).addClass('spaghetti-image');
+            }
+            if($(this).attr('src')==='img/Download-Hamburger-Transparent-Background.png'){
+                $(this).addClass('spaghetti-image');
+            }
+            if($(this).attr('src')==='img/fried-chicken-png-11552945573sn657hxomw.png'){
+                $(this).addClass('friedchicken-image');
+            }
+            if($(this).attr('src')==='img/ice_cream_PNG5096.png'){
+                $(this).addClass('icecream-image');
+            }
+            if($(this).attr('src')==='img/comtam.jpg'){
+                $(this).addClass('comtam-image');
+            }
+          });
         count2=true;
     }else{
+        $('.shop-container').css({
+            'display':'block',
+            'grid-template-columns':'none',
+            'grid-gap':'none',
+            'justify-content':'none',
+        });
         $('.shop-items').show();
     }
 
@@ -301,14 +372,14 @@ function clickCheckBox4(){
     if($('.input-price:eq(3)').prop('checked') === true && count3===false){
         $('.shop-container').css({
             'display':'grid',
-            'grid-template-columns':'repeat(3,400px)',
+            'grid-template-columns':'repeat(2,400px)',
             'grid-gap':'0',
             'justify-content':'center',  
         });
         console.log(arrOne);
         for(let i=0;i<arrOne.length;i++){
             $('.shop-container').append("<div class='row classFour'>"+"<div class='shop-items five food'>"
-            +"<img class='nuocchanh-image' src="+arrOne[i].imageURL+">"
+            +"<img class='image-lag' src="+arrOne[i].imageURL+">"
             +"<div class='shop-item-details'>"
             +"<span class='shop-item-title'>"
             +arrOne[i].title
@@ -324,8 +395,43 @@ function clickCheckBox4(){
             +"</div>"
             );
         }
+        $('.image-lag').each(function(){
+            if($(this).attr('src')==='img/to-pho-truyen-thong.jpg'){
+                $(this).addClass('pho-image');
+            }
+            if($(this).attr('src')==='img/nuoc-chanh-tuoi.jpg'){
+                $(this).addClass('nuocchanh-image');
+            }
+            if($(this).attr('src')==='img/tumblr_otkk1qL0P71uyxczto1_500.png'){
+                $(this).addClass('bunbo-image');
+            }
+            if($(this).attr('src')==='img/Tra-Sua-Khoai-Mon.png'){
+                $(this).addClass('bunbo-image');
+            }
+            if($(this).attr('src')==='img/Spaghetti-PNG-Transparent-Image.png'){
+                $(this).addClass('spaghetti-image');
+            }
+            if($(this).attr('src')==='img/Download-Hamburger-Transparent-Background.png'){
+                $(this).addClass('spaghetti-image');
+            }
+            if($(this).attr('src')==='img/fried-chicken-png-11552945573sn657hxomw.png'){
+                $(this).addClass('friedchicken-image');
+            }
+            if($(this).attr('src')==='img/ice_cream_PNG5096.png'){
+                $(this).addClass('icecream-image');
+            }
+            if($(this).attr('src')==='img/comtam.jpg'){
+                $(this).addClass('comtam-image');
+            }
+          });
         count3=true;
     }else{
+        $('.shop-container').css({
+            'display':'block',
+            'grid-template-columns':'none',
+            'grid-gap':'none',
+            'justify-content':'none',  
+        });
         $('.shop-items').show();
     }
 
@@ -347,9 +453,15 @@ function sortLowToHigh(){
     products.sort(function(a,b){
         return parseFloat(a.price) - parseFloat(b.price);
     });
+    $('.shop-container').css({
+        'display':'grid',
+        'grid-template-columns':'repeat(3,400px)',
+        'grid-gap':'0',
+        'justify-content':'center',  
+    });
     for(let i=0;i<products.length;i++){
         $('.shop-container').append("<div class='row'>"+"<div class='shop-items five food'>"
-        +"<img class='nuocchanh-image' src="+products[i].imageURL+">"
+        +"<img class='image-lag' src="+products[i].imageURL+">"
         +"<div class='shop-item-details'>"
         +"<span class='shop-item-title'>"
         +products[i].title
@@ -365,15 +477,62 @@ function sortLowToHigh(){
         +"</div>"
         );
     }
+    $('.image-lag').each(function(){
+        if($(this).attr('src')==='img/to-pho-truyen-thong.jpg'){
+            $(this).addClass('pho-image');
+        }
+        if($(this).attr('src')==='img/nuoc-chanh-tuoi.jpg'){
+            $(this).addClass('nuocchanh-image');
+        }
+        if($(this).attr('src')==='img/tumblr_otkk1qL0P71uyxczto1_500.png'){
+            $(this).addClass('bunbo-image');
+        }
+        if($(this).attr('src')==='img/Tra-Sua-Khoai-Mon.png'){
+            $(this).addClass('bunbo-image');
+        }
+        if($(this).attr('src')==='img/Spaghetti-PNG-Transparent-Image.png'){
+            $(this).addClass('spaghetti-image');
+        }
+        if($(this).attr('src')==='img/Download-Hamburger-Transparent-Background.png'){
+            $(this).addClass('spaghetti-image');
+        }
+        if($(this).attr('src')==='img/fried-chicken-png-11552945573sn657hxomw.png'){
+            $(this).addClass('friedchicken-image');
+        }
+        if($(this).attr('src')==='img/ice_cream_PNG5096.png'){
+            $(this).addClass('icecream-image');
+        }
+        if($(this).attr('src')==='img/comtam.jpg'){
+            $(this).addClass('comtam-image');
+        }
+      });
+      $('.addtocart-button-container').each(function(){
+        $(this).hover(function(){
+            $(this).css('background-color','red');
+            $(this).css('border','none');
+            $(this).find('.addtocart-image').attr('src','img/shopping-cart-2.svg'); // this is the current parent div that i am reference to, using to find the chidlden div
+        },function(){
+            $(this).css('background-color','white');
+            $(this).css('border','1px dashed black');
+            $(this).find('.addtocart-image').attr('src','img/shopping-cart-1.svg');
+        });
+        
+    });
 }
 function sortHighToLow(){
     $('.foodanddrink-desktop').children().children().children().remove();
     products.sort(function(a,b){
         return parseFloat(b.price) - parseFloat(a.price);
     });
+    $('.shop-container').css({
+        'display':'grid',
+        'grid-template-columns':'repeat(3,400px)',
+        'grid-gap':'0',
+        'justify-content':'center',  
+    });
     for(let i=0;i<products.length;i++){
         $('.shop-container').append("<div class='row'>"+"<div class='shop-items five food'>"
-        +"<img class='nuocchanh-image' src="+products[i].imageURL+">"
+        +"<img class='image-lag' src="+products[i].imageURL+">"
         +"<div class='shop-item-details'>"
         +"<span class='shop-item-title'>"
         +products[i].title
@@ -389,11 +548,58 @@ function sortHighToLow(){
         +"</div>"
         );
     }
+    $('.image-lag').each(function(){
+        if($(this).attr('src')==='img/to-pho-truyen-thong.jpg'){
+            $(this).addClass('pho-image');
+        }
+        if($(this).attr('src')==='img/nuoc-chanh-tuoi.jpg'){
+            $(this).addClass('nuocchanh-image');
+        }
+        if($(this).attr('src')==='img/tumblr_otkk1qL0P71uyxczto1_500.png'){
+            $(this).addClass('bunbo-image');
+        }
+        if($(this).attr('src')==='img/Tra-Sua-Khoai-Mon.png'){
+            $(this).addClass('bunbo-image');
+        }
+        if($(this).attr('src')==='img/Spaghetti-PNG-Transparent-Image.png'){
+            $(this).addClass('spaghetti-image');
+        }
+        if($(this).attr('src')==='img/Download-Hamburger-Transparent-Background.png'){
+            $(this).addClass('spaghetti-image');
+        }
+        if($(this).attr('src')==='img/fried-chicken-png-11552945573sn657hxomw.png'){
+            $(this).addClass('friedchicken-image');
+        }
+        if($(this).attr('src')==='img/ice_cream_PNG5096.png'){
+            $(this).addClass('icecream-image');
+        }
+        if($(this).attr('src')==='img/comtam.jpg'){
+            $(this).addClass('comtam-image');
+        }
+      });
+      $('.addtocart-button-container').each(function(){
+        $(this).hover(function(){
+            $(this).css('background-color','red');
+            $(this).css('border','none');
+            $(this).find('.addtocart-image').attr('src','img/shopping-cart-2.svg'); // this is the current parent div that i am reference to, using to find the chidlden div
+        },function(){
+            $(this).css('background-color','white');
+            $(this).css('border','1px dashed black');
+            $(this).find('.addtocart-image').attr('src','img/shopping-cart-1.svg');
+        });
+        
+    });
 }
 var addToCartProducts=[];
 var productCounts=0;
 $('.addtocart-button-container').one('click',function(event){
     productCounts++;
+    if(productCounts===0){
+        console.log(':(');
+    }else{
+        $('.addToCart').find('.productCount').html(productCounts);
+    }
+  
     let e = $(event.target);
     let addToCartObject={
         imageURL:'',
@@ -406,6 +612,7 @@ $('.addtocart-button-container').one('click',function(event){
         addToCartObject.price=parseInt(e.parent().parent().find('.shop-item-price').data('value'));
         addToCartObject.title=e.parent().parent().find('.shop-item-title').text();
         addToCartObject.imageURL=e.parent().parent().parent().find('.product-image-1').attr('src');
+        console.log(e.parent().parent().parent().find('.product-image-1'));
         addToCartObject.productCount=productCounts;
         console.log(addToCartObject);
         addToCartProducts.push(addToCartObject);
@@ -422,6 +629,7 @@ $('.product-image').click(function(){
         localStorage.setItem("detailsProductTitle", JSON.stringify(detailsProductTitle));
     }
 });
+
 
 
 

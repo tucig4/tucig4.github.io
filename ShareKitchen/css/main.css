@@ -51,7 +51,6 @@ body, html {
 .headerWord-2{
     cursor: pointer; 
     font-size: 16px;
-    color: white;
 }
 .fix{
     color: white;
@@ -407,6 +406,12 @@ a{
     .m-drinkandfood{
         width: 182px;
     }
+    .fix{
+        color: #818181;
+    }
+    .fix:hover{
+        color: white;
+    }
     /*footer*/
     .footer-desktop{
         display: none;
@@ -476,6 +481,12 @@ a{
         height: 63px;
         width: 100%;
         background-color: black;
+    }
+    .fix{
+        color: #818181;
+    }
+    .fix:hover{
+        color: white;
     }
     .logo{
         display: block;

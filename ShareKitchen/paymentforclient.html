@@ -12,7 +12,7 @@
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
         <link rel="stylesheet" type="text/css" href="css/main.css">
-        <link rel="stylesheet" type="text/css" href="css/moneypartner.css">
+        <link rel="stylesheet" type="text/css" href="css/payment.css">
         <link rel="stylesheet" type="text/css" href="css/fontawesome-with-css/css/all.css">
         
     </head>
@@ -37,8 +37,8 @@
                         <div class="dropdown-1">
                           <button class="dropbtn-1"><a href="foodanddrink.html">THỨC ĂN & ĐỒ UỐNG</a></button>
                           <div class="dropdown-content-1">
-                            <a href="foodanddrink.html">THỨC ĂN</a>
-                            <a href="foodanddrink.html">ĐỒ UỐNG</a>
+                            <a href="#">THỨC ĂN</a>
+                            <a href="#">ĐỒ UỐNG</a>
                           </div>
                         </div>
                         <a href="partner.html">ĐỐI TÁC</a> 
@@ -103,28 +103,37 @@
             <img class="next-image" src="img/next.svg">
             <a href="partnerandonator.html" class="navigation-partnerandonator-1">ĐỐI TÁC & TÀI TRỢ</a>
             <img class="next-image" src="img/next.svg">
-            <a href="moneydonator.html" class="navigation-moneypartner-1">TIỀN & DỤNG CỤ</a>
+            <a href="payment.html" class="navigation-payment-1">THANH TOÁN</a>
            </section>
-           <section class="moneypartner-desktop">
-               <div class="form-moneypartner">
-                   <div class="header-form-moneypartner">TIỀN & DỤNG CỤ</div>
-                   <form action="payment.html" class="form-moneypartner-content">
-                        <div class="form-moneypartner-content-1">
-                        <input type="hidden" value="true" name="donator">
-                        <label class="moneypartner-form-checkbox"><input type="checkbox" checked="checked" name="Bằng tiền"> BẰNG TIỀN</label>
-                        <br>
-                        <label for="amount">Số tiền (VND)</label>
-                        <br>
-                        <input min="0" type="number" placeholder="0" name="amount" id="amount">
+           <section class="payment-desktop">
+               <div class="form-payment">
+                   <div class="header-form-payment">THANH TOÁN</div>
+                   <form action="thankclient.html" class="form-payment-content">
+                        <div class="form-payment-content-1">
+                        <div class="card-1">
+                            <div class="visa-container visa-container-origin" onclick="changeBorder1()"><img class="visa" src="img/visa (1).svg"></div>
+                            <div class="mastercard-container mastercard-container-origin" onclick="changeBorder2()"><img class="mastercard" src="img/mastercard.svg"></div>
+                            <div class="paypal-container paypal-container-origin" onclick="changeBorder3()"><img class="paypal" src="img/paypal.svg"></div>
                         </div>
-                        <div class="form-moneypartner-content-2">
-                        <label class="moneypartner-form-checkbox"><input type="checkbox" checked="checked" name="Bằng tiền"> BẰNG DỤNG CỤ</label>
-                        <br>
-                        <label for="time">Thời gian chuyển đến</label>
-                        <br>
-                        <input type="date" name="amount" id="time-input">
+                        <div class="numberofcard">
+                            <label for="numberofcard-text">SỐ THẺ</label>
+                            <br>
+                            <input type="text" class="numberofcard-text">
                         </div>
-                        <button type="submit" class="btn-moneypartner">TIẾP TỤC</button>
+                        <div class="info-container">
+                        <div class="expiry-date">
+                            <label for="expiry-date-text">HẠN SỬ DỤNG</label>
+                            <br>
+                            <input type="date" class="expiry-date-input">
+                        </div>
+                        <div class="cvc">
+                            <label for="cvc-text">CVC</label>
+                            <br>
+                            <input type="text" class="cvc-input">
+                        </div>
+                        </div>
+                        </div>
+                        <button type="submit" class="btn-payment">TIẾP TỤC</button>
                     </form>
                </div>
            </section>
@@ -177,6 +186,7 @@
        </div>
       
        <script src="js/main.js"></script>
+       <script src="js/payment.js"></script>
        </body>    
 </html>
 

@@ -1,5 +1,5 @@
 function writeReview(){
-    alert(1);
+    
 }
 var storeddetailsProductTitle= localStorage.getItem('detailsProductTitle');
 var storedproducts= localStorage.getItem('products');
@@ -23,7 +23,7 @@ function renderThisPage(){
         for(let j=0;j<detailsProductTitle.length;j++){
             if(detailsProductTitle[j]===products[i].title){
                 console.log(1);
-                $('.navigation-detailsproduct-1').html(products[i].title);
+                $('.navigation-detailsproduct-1').html(products[i].title.toUpperCase());
                 $('.left-detailsproduct-word').html(products[i].title);
                 $('.left-detailsproduct-price').attr('data-value',products[i].price);
                 $('.left-detailsproduct-price').html(products[i].price.toLocaleString('de-DE')+'đ');

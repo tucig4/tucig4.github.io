@@ -100,6 +100,40 @@ th{
 .partner-word-1, .money-1{
     text-align: center;
 }
+.pho-image{
+    width: 398px;
+    height: 266.67px;
+}
+.nuocchanh-image{
+   
+    width: 300px;
+    height: 300px;
+}
+.bunbo-image{
+   
+    width: 300px;
+    height: 300px;
+}
+.spaghetti-image{
+   
+    width: 400px;
+    height: 230px;
+}
+.friedchicken-image{
+    
+    width: 400px;
+    height: 200px;
+}
+.icecream-image{
+    
+    width: 178px;
+    height: 300px;
+}
+.comtam-image{
+    
+    width: 398px;
+    height: 300px;
+}
 @media only screen and (min-width: 934px ) and (max-width:1118px){
     .form-thank{
         position: relative;

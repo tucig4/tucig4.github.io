@@ -109,7 +109,45 @@
                    <div class="left-detailsproduct-word">PHỞ BÒ</div>
                    <div class="left-detailsproduct-word-1">Một trong số các món ăn ngon nhất thế giới</div>
                    <div class="left-detailsproduct-price" data-value="">25.000đ</div>
-                   <div class="write-review" onclick="writeReview()">Viết đánh giá</div>
+
+                   <!-- Button trigger modal -->
+                <button type="button" class="btn write-review" data-toggle="modal" data-target="#exampleModalCenter">
+                        Viết đánh giá
+                    </button>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Đánh Giá</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="star">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                </div>
+                                <label>Tiêu đề</label>
+                                <br>
+                                <input type="text">
+                                <br>
+                                <label>Nội dung</label>
+                                <br>
+                                <input type="text">
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                            <button type="button" class="btn btn-primary">Lưu</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
                </div>
                <div class="right-detailsproduct">
                    <div class="right-detailsproduct-image-container">
@@ -130,6 +168,13 @@
                     <hr class="line-review">
                     <div class="review-content">
                         <div class="rating">
+                                <div class="star">
+                                        <i style="color: red" class="fas fa-star"></i>
+                                        <i style="color: red" class="fas fa-star"></i>
+                                        <i style="color: red" class="fas fa-star"></i>
+                                        <i style="color: red" class="fas fa-star"></i>
+                                        <i style="color: red" class="fas fa-star"></i>
+                                </div>
                             <div class="account">FeelsBadMen</div>
                         </div>
                         <div class="review-content-header">Tôi rất thích sản phẩm này</div>
@@ -138,6 +183,13 @@
                     <hr class="line-review">
                     <div class="review-content">
                         <div class="rating">
+                            <div class="star">
+                                    <i style="color: red" class="fas fa-star"></i>
+                                    <i style="color: red" class="fas fa-star"></i>
+                                    <i style="color: red" class="fas fa-star"></i>
+                                    <i style="color: red" class="fas fa-star"></i>
+                                    <i style="color: red" class="fas fa-star"></i>
+                            </div>
                             <div class="account">FeelsBadMen</div>
                         </div>
                         <div class="review-content-header">Tôi rất thích sản phẩm này</div>

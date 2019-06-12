@@ -18,17 +18,17 @@ var moneypartner;
     }else{
         console.log("null");
     }
-    if(storedMoneyDonator){
+    if(storedMoneyDonator==="undefined"|| storedMoneyDonator===null){
+        console.log(null);
+    }else{
         moneydonator = JSON.parse(storedMoneyDonator);
         console.log(moneydonator);
-    }else{
-        console.log("null");
     }
-    if(storedMoneyPartner){
+    if(storedMoneyPartner==="undefined" || storedMoneyPartner===null){
+        console.log(null);
+    }else{
         moneypartner = JSON.parse(storedMoneyPartner);
         console.log(moneypartner);
-    }else{
-        console.log("null");
     }
 
 
@@ -90,7 +90,7 @@ function renderMoneyDonator(){
     $('.money-thank').append(
     '<label class="partner-word-1">'+'TÀI TRỢ'+'</label>'
     +'<label class="money-1">'
-    +moneydonator+ ' đ'
+    +parseInt(moneydonator).toLocaleString('de-DE')+ ' đ'
     +'</label>'
     );
 }
@@ -99,7 +99,7 @@ function renderMoneyPartner(){
     $('.money-thank').append(
     '<label class="partner-word-1">'+'ĐỐI TÁC'+'</label>'
     +'<label class="money-1">'
-    +moneypartner+' đ'
+    +parseInt(moneypartner).toLocaleString('de-DE')+' đ'
     +'</label>'
     );
 }

@@ -48,7 +48,9 @@ function renderaddToCartProducts(){
       }
       if($(this).attr('src')==='img/comtam.jpg'){
           $(this).addClass('comtam-image');
-      }
+      }  if($(this).attr('src')==='img/Download-Hamburger-Transparent-Background.png'){
+        $(this).addClass('spaghetti-image');
+    }
     });
     
   

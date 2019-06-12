@@ -12,7 +12,8 @@
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
         <link rel="stylesheet" type="text/css" href="css/main.css">
-        <link rel="stylesheet" type="text/css" href="css/moneypartner.css">
+        <link rel="stylesheet" type="text/css" href="css/thank.css">
+        <link rel="stylesheet" type="text/css" href="css/thankclient.css">
         <link rel="stylesheet" type="text/css" href="css/fontawesome-with-css/css/all.css">
         
     </head>
@@ -71,8 +72,8 @@
                         <li><a href="about.html">GIỚI THIỆU</a></li>
                         <li><a href="foodanddrink.html" class="m-drinkandfood">THỨC ĂN & ĐỒ UỐNG</a>
                            <ul>
-                             <li><a href="#">THỨC ĂN</a></li>
-                             <li><a href="#">ĐỒ UỐNG</a></li>
+                             <li><a href="foodanddrink.html">THỨC ĂN</a></li>
+                             <li><a href="foodanddrink.html">ĐỒ UỐNG</a></li>
                            </ul>
                         </li>
                         <li><a href="partner.html">ĐỐI TÁC</a>
@@ -96,39 +97,22 @@
                         </div>
                         </a>
            </header>
-           <section class="navigation-partnerandonator">
-            <a href="index.html" class="navigation-home-1">TRANG CHỦ</a>
-            <img class="next-image" src="img/next.svg">
-            <a href="partner.html" class="navigation-partner-1">ĐỐI TÁC</a>
-            <img class="next-image" src="img/next.svg">
-            <a href="partnerandonator.html" class="navigation-partnerandonator-1">ĐỐI TÁC & TÀI TRỢ</a>
-            <img class="next-image" src="img/next.svg">
-            <a href="moneydonator.html" class="navigation-moneypartner-1">TIỀN & DỤNG CỤ</a>
-           </section>
-           <section class="moneypartner-desktop">
-               <div class="form-moneypartner">
-                   <div class="header-form-moneypartner">TIỀN & DỤNG CỤ</div>
-                   <form action="payment.html" class="form-moneypartner-content">
-                        <div class="form-moneypartner-content-1">
-                        <input type="hidden" value="true" name="donator">
-                        <label class="moneypartner-form-checkbox"><input type="checkbox" checked="checked" name="Bằng tiền"> BẰNG TIỀN</label>
-                        <br>
-                        <label for="amount">Số tiền (VND)</label>
-                        <br>
-                        <input min="0" type="number" placeholder="0" name="amount" id="amount">
+           <section class="thank-desktop">
+               <div class="form-thank">
+                   <div class="header-form-thank">CẢM ƠN ĐÃ MUA HÀNG Ở CỬA HÀNG CHÚNG TÔI</div>
+                   <form action="index.html" class="form-thank-content">
+                        <div class="form-thank-content-1">
+                            <label>THỨC ĂN & ĐỒ UỐNG</label>
+                            <table class="table-thankclient-desktop">
+                                </table> 
                         </div>
-                        <div class="form-moneypartner-content-2">
-                        <label class="moneypartner-form-checkbox"><input type="checkbox" checked="checked" name="Bằng tiền"> BẰNG DỤNG CỤ</label>
-                        <br>
-                        <label for="time">Thời gian chuyển đến</label>
-                        <br>
-                        <input type="date" name="amount" id="time-input">
-                        </div>
-                        <button type="submit" class="btn-moneypartner">TIẾP TỤC</button>
+                        
                     </form>
                </div>
            </section>
-           <div class="space"></div>
+           <div class="space">
+                <button class="btn-content"><a class="btn-a" href="index.html">KẾT THÚC</a></button>
+           </div>
                <footer class="footer-desktop">
                    <div class="content-footer">
                        <div class="word-footer">Vị trí</div>
@@ -177,6 +161,8 @@
        </div>
       
        <script src="js/main.js"></script>
+       <script src="js/thank.js"></script>
+       <script src="js/thankclient.js"></script>
        </body>    
 </html>
 

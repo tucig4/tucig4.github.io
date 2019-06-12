@@ -55,6 +55,16 @@
     color: black;
 }
 /*foodanddrink-banner*/
+.productCount{
+    position: absolute;
+    top: 10px;
+    left: 27px;
+    background-color: red;
+    color: white;
+    width: 16px;
+    font-size: 16px;
+    pointer-events: none;
+}
 .tap{
     display: flex;
     flex-direction: row;
@@ -148,6 +158,40 @@
 }
 .filter-box-word-1:hover{
     color: white;
+}
+.pho-image{
+    width: 398px;
+    height: 266.67px;
+}
+.nuocchanh-image{
+   
+    width: 300px;
+    height: 300px;
+}
+.bunbo-image{
+   
+    width: 300px;
+    height: 300px;
+}
+.spaghetti-image{
+   
+    width: 400px;
+    height: 230px;
+}
+.friedchicken-image{
+    
+    width: 400px;
+    height: 200px;
+}
+.icecream-image{
+    
+    width: 178px;
+    height: 300px;
+}
+.comtam-image{
+    
+    width: 398px;
+    height: 300px;
 }
 @media only screen and (min-width: 562px ) and (max-width:683px){
     .banner-container{
