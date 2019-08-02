@@ -260,6 +260,7 @@ a{
     top: calc(100% - 154px);
     left: calc(100% - 390px);
 }
+
 @media only screen and (min-width: 300px ) and (max-width:647px){
     /*header*/
     .desktop-header{

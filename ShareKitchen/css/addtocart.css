@@ -129,6 +129,8 @@
 }
 .image-container{
     width: 400px;
+    display: flex;
+    justify-content: center;
 }
 .space{
     height: 100px;
