@@ -1,0 +1,27 @@
+$('.hero').hover(function(){
+    $(this).find(".hover-sth").css("display","block");
+},function(){
+    $(this).find(".hover-sth").css("display","none");
+})
+$('.latest-works-container-1').hover(function(){
+    $(this).find(".plus").css("display","block");
+},function(){
+    $(this).find(".plus").css("display","none");
+})
+$('.mask-container').hover(function(){
+    $(this).find(".plus-1").css("display","block");
+},function(){
+    $(this).find(".plus-1").css("display","none");
+})
+$('.mask-container-2').hover(function(){
+    $(this).find(".plus").css("display","block");
+},function(){
+    $(this).find(".plus").css("display","none");
+})
+$('.next').hover(function(){
+    $(this).find(".word-footer-2").css("color","#00bc9c");
+    $(this).find(".fa-arrow-right").css("color","#00bc9c");
+},function(){
+    $(this).find(".word-footer-2").css("color","#98a6b4");
+    $(this).find(".fa-arrow-right").css("color","#98a6b4");
+})
