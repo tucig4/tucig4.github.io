@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>InternWeb-W1-part-1</title>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"  crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
     <link rel="stylesheet" type="text/css" href="css/fontawesome-with-css/css/all.css">
     <link rel="stylesheet" href="css/index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,24 +27,24 @@
                         </div>
                     </div>
                     <div class="social-network">
-                        <div class="facebook same-icon">
-                        <i class="fab fa-facebook-f fa-xs"></i>
-                        </div>
-                        <div class="google-plus same-icon">
+                        <a href="#" class="facebook same-icon">
+                            <i class="fab fa-facebook-f fa-xs"></i>
+                        </a>
+                        <a href="#" class="google-plus same-icon">
                         <i class="fab fa-google-plus-g fa-xs"></i>
-                        </div>
-                        <div class="twitter same-icon">
+                        </a>
+                        <a href="#" class="twitter same-icon">
                         <i class="fab fa-twitter fa-xs"></i>
-                        </div>
-                        <div class="pinterest same-icon">
+                        </a>
+                        <a href="#" class="pinterest same-icon">
                         <i class="fab fa-pinterest-p fa-xs"></i>
-                        </div>
-                        <div class="behance same-icon">
+                        </a>
+                        <a href="#" class="behance same-icon">
                         <i class="fab fa-behance fa-xs"></i>
-                        </div>
-                        <div class="dribbble same-icon">
+                        </a>
+                        <a href="#" class="dribbble same-icon">
                         <i class="fab fa-dribbble fa-xs"></i>
-                        </div>
+                        </a>
                     </div>
                     </div>
                 </div>
@@ -65,13 +67,15 @@
                             <li><a href="#">MEGA MENU</a></li>
                             <li><a href="#">CONTACT</a></li>
                     </ul>
-                    <i class="fas fa-search"></i>
+                    <form class="search-bar">
+                        <button class="button-search-container"><i class="fas fa-search ff fa-xs nb"></i></button>
+                    </form>
                     </div>
                 </div>
             </header>
             <header class="mobile">
                     <div class="header-1">
-                        <div class="wrapper-header">
+                        <div class="wrapper-header overrive">
                         <div class="info">
                             <div class="info-1">
                                 <i class="far fa-envelope fa-xs email-image"></i>
@@ -83,51 +87,61 @@
                             </div>
                         </div>
                         <div class="social-network">
-                            <div class="facebook same-icon">
-                            <i class="fab fa-facebook-f fa-xs"></i>
+                                <a href="#" class="facebook same-icon">
+                                    <i class="fab fa-facebook-f fa-xs"></i>
+                                </a>
+                                <a href="#" class="google-plus same-icon">
+                                <i class="fab fa-google-plus-g fa-xs"></i>
+                                </a>
+                                <a href="#" class="twitter same-icon">
+                                <i class="fab fa-twitter fa-xs"></i>
+                                </a>
+                                <a href="#" class="pinterest same-icon">
+                                <i class="fab fa-pinterest-p fa-xs"></i>
+                                </a>
+                                <a href="#" class="behance same-icon">
+                                <i class="fab fa-behance fa-xs"></i>
+                                </a>
+                                <a href="#" class="dribbble same-icon">
+                                <i class="fab fa-dribbble fa-xs"></i>
+                                </a>
                             </div>
-                            <div class="google-plus same-icon">
-                            <i class="fab fa-google-plus-g fa-xs"></i>
-                            </div>
-                            <div class="twitter same-icon">
-                            <i class="fab fa-twitter fa-xs"></i>
-                            </div>
-                            <div class="pinterest same-icon">
-                            <i class="fab fa-pinterest-p fa-xs"></i>
-                            </div>
-                            <div class="behance same-icon">
-                            <i class="fab fa-behance fa-xs"></i>
-                            </div>
-                            <div class="dribbble same-icon">
-                            <i class="fab fa-dribbble fa-xs"></i>
-                            </div>
-                        </div>
                         </div>
                     </div>
                     <div class="header-2">
-                        <button class="responsive"><i class="fas fa-bars fa-2x"></i></button>
+                            <div class="wrapper-header">
                         <img class="logo" src="img/logo.png" alt="logo">
-                        <!-- <ul id="coolMenu">
-                                <li><a href="#">HOME</a>
-                                    <ul>
-                                        <li><a href="#">AGENCY STYLE</a></li>
-                                        <li><a href="#">PRODUCT STYLE</a></li>
-                                        <li><a href="#">SERVICE STYLE</a></li>
-                                        <li><a href="#">PORTFOLIO STYLE</a></li>
-                                        <li><a href="#">SHOWCASE STYLE</a></li>
-                                    </ul>
-                                </li>    
-                                <li><a href="#">PORTFOLIO</a></li>
-                                <li><a href="#">BLOG</a></li>
-                                <li><a href="#">FEATURES</a></li>
-                                <li><a href="#">MEGA MENU</a></li>
-                                <li><a href="#">CONTACT</a></li>
-                        </ul> -->
-                        <i class="fas fa-search fa-2x"></i>
-                        
+                        <button class="responsive" onclick="openNav()"><i class="fas fa-bars fa-2x"></i></button>   
+                        <div id="myNav" class="overlay">
+                                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                                <div class="overlay-content">
+                                    <ul id="coolMenu2">
+                                        <li><a href="#">HOME</a>
+                                            <ul>
+                                                <li><a href="#">AGENCY STYLE</a></li>
+                                                <li><a href="#">PRODUCT STYLE</a></li>
+                                                <li><a href="#">SERVICE STYLE</a></li>
+                                                <li><a href="#">PORTFOLIO STYLE</a></li>
+                                                <li><a href="#">SHOWCASE STYLE</a></li>
+                                            </ul>
+                                        </li>    
+                                        <li><a href="#">PORTFOLIO</a></li>
+                                        <li><a href="#">BLOG</a></li>
+                                        <li><a href="#">FEATURES</a></li>
+                                        <li><a href="#">MEGA MENU</a></li>
+                                        <li><a href="#">CONTACT</a></li>
+                                    </ul> 
+                                    <form class="search-bar-m">
+                                            <input class="input-search-bar-m">
+                                           <button class="search-m"> <i class="fas fa-search fa-1x"></i></button>
+                                        </form>
+                                </div>
+                        </div>
+                        </div>
                     </div>
                 </header>
             <section class="hero">
+                    
                 <div class="wrapper-hero">
                 <div class="hero-text-container same-text">
                     <h1 class="hero-word-1">MADE FOR DESIGNERS</h1>
@@ -136,13 +150,17 @@
                 <button class="hero-button">GET STARTED NOW</button>
                 
                 </div>
+                <div class="next-pre">
+                        <button class="pre-btn" onclick="currentIndex(-1)"><i class="fas fa-arrow-left fa-2x"></i></button>
+                        <button class="next-btn" onclick="currentIndex(1)"><i class="fas fa-arrow-right fa-2x"></i></button>
+                </div>
                 <div class="hover-sth">
                 <div class="btn-container">
-                        <button class="same-btn"></button>
-                        <button class="same-btn"></button>
-                        <button class="same-btn"></button>
-                        <button class="same-btn"></button>
-                        <button class="same-btn"></button>
+                        <button class="same-btn" onclick="changeImage(1);"></button>
+                        <button class="same-btn" onclick="changeImage(2);"></button>
+                        <button class="same-btn" onclick="changeImage(3);"></button>
+                        <button class="same-btn" onclick="changeImage(4);"></button>
+                        <button class="same-btn" onclick="changeImage(5);"></button>
                 </div>
             </div>
             </section>
@@ -157,21 +175,21 @@
                     <div class="who-we-are-icon-container">
                         <div class="who-we-are-icon-container-1">
                             <i class="color-icon far fa-heart fa-4x"></i>
-                            <div class="who-we-are-text-container">
+                            <div class="who-we-are-text-container-n">
                             <h2>Passion</h2>
                             <p> Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis volor.</p>
                             </div>
                         </div>
-                        <div class="who-we-are-icon-container-1">
+                        <div class="who-we-are-icon-container-1 fix-z">
                                 <i class="color-icon far fa-lightbulb fa-4x"></i>
-                                <div class="who-we-are-text-container">
+                                <div class="who-we-are-text-container-n">
                                 <h2>Creativity</h2>
                                 <p>Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis volor.</p>
                                 </div>
                         </div>
-                        <div class="who-we-are-icon-container-1">
+                        <div class="who-we-are-icon-container-1 fix-z-1">
                                 <i class="color-icon far fa-star fa-4x"></i>
-                                <div class="who-we-are-text-container">
+                                <div class="who-we-are-text-container-n">
                                 <h2>Quality</h2>
                                 <p>Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis volor.</p>
                                 </div>
@@ -187,20 +205,14 @@
                 </div>
                 <div class="latest-works-container">
                     <div class="latest-works-container-1">
-                        <img src="img/image-grand.png" alt="image-grand">
-                        <div class="mask-image">
-                            <div class="plus">+</div>
-                        </div>
+                        <div class="mask-1"><img src="img/image-grand.png" alt="image-grand"></div>
                         <div class="title-identity">
                             <h2 class="latest-works-word-1">Grand Motel gets an identity brushup</h2>
                             <h6 class="latest-works-word-2">Identity</h6>
                         </div>
                     </div>
                     <div class="latest-works-container-1">
-                            <img src="img/image-brush.png" alt="image-brush">
-                            <div class="mask-image">
-                                    <div class="plus">+</div>
-                            </div>
+                            <div class="mask-1"><img src="img/image-brush.png" alt="image-brush"></div>
                             <div class="title-identity">
                                 <h2 class="latest-works-word-1">Fresh branding for a creative startup</h2>
                                 <h6 class="latest-works-word-2">Identity</h6>
@@ -208,35 +220,26 @@
                     </div>
                 </div>
                 <div class="slider">
-                    <div class="slider-image-container">
-                            <img src="img/image-1.png">
-                      
-                        <img src="img/image-2.png">
-                        <div class="mask-container">
-                                <img src="img/image-3.png">
-                                <div class="mask-image">
-                                        <div class="plus plus-1">
-                                            <p>Astor & Yancy</p>
-                                            <p>Identity</p>
-                                        </div>
-                                </div>
-                                </div>
-                        <img src="img/image-4.png">
-                    </div>
-                    <div class="button-container">
-                        <button class="same-btn"></button>
-                        <button class="same-btn"></button>
-                        <button class="same-btn"></button>
+                        <div class="owl-carousel owl-theme">
+                                <div class="item mask-1"><img src="img/image-1.png"></div>
+                                <div class="item mask-1"><img src="img/image-2.png"></div>
+                                <div class="item mask-1"><img src="img/image-3.png"></div>
+                                <div class="item mask-1"><img src="img/image-4.png"></div> 
+                                <div class="item mask-1"><img src="img/image-1.png"></div>
+                                <div class="item mask-1"><img src="img/image-2.png"></div>
+                                <div class="item mask-1"><img src="img/image-3.png"></div>
+                                <div class="item mask-1"><img src="img/image-4.png"></div> 
+                        </div>
                     </div>
                 </div>
                 </div>
             </section>
             <section class="getintouch">
-                <div class="wrapper-latest-works fix-1">
-                <div class="latest-works-words-container">
+                <div class="getintouch-wrapper fix-1">
+                <div class="getintouch-container">
                     <h2 class="who-we-are-word-1">Want to work with us?</h2>
-                    <p class="who-we-are-word-2 fix">Magnis modipsae que voloratati andigen daepeditem quiate re porem aut labor.</p>
-                    <p class="who-we-are-word-2 fix fix-2"> Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam.</p>
+                    <p class="who-we-are-word-2 fix">Magnis modipsae que voloratati andigen daepeditem quiate re porem aut labor
+                     Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam.</p>
                 </div>
                 <button class="hero-button fix-3">GET IN TOUCH</button>
             </div>
@@ -250,22 +253,16 @@
                         <p class="distance-2 word-footer-1">Magnis modipsae voloratati andigen daepeditem quiate re porem que aut labor. Laceaque eictemperum quiae sitiorem rest non restibusaes maio es dem tumquam.</p>
                         <div class="next">
                             <p class="word-footer-2">More about us</p>
-                            <i class="fas fa-arrow-right fa-xs"></i>
+                            <i class="fas fa-arrow-right fa-arrow-right-1 fa-xs"></i>
                         </div>
                     </div>
                     <div class="footer-container-2">
                         <h2 class="footer-text-1">LATEST WORKS</h2>
-                        <div class="distance-1 footer-container-2-image" class="footer-container-2-image">
-                                <div class="mask-container-2">
-                                        <img src="img/image-7.png">
-                                        <div class="mask-image">
-                                                <div class="plus">+
-                                                </div>
-                                        </div>
-                                        </div>
-                            <img src="img/image-8.png" alt="image-8">
-                            <img src="img/image-9.png" alt="image-9">
-                            <img src="img/image-0.png" alt="image-0">
+                        <div class="distance-1 footer-container-2-image">
+                              <div class="mask-2"><img src="img/image-0.png"></div>
+                              <div class="mask-2"><img src="img/image-7.png"></div>
+                              <div class="mask-2"><img src="img/image-8.png"></div>
+                              <div class="mask-2"><img src="img/image-9.png"></div>
                         </div>
                     </div>
                     <div class="footer-container-3">
@@ -311,6 +308,7 @@
                 </div>
             </footer>
         </div>
+        <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
         <script src="js/script.js"></script>
 </body>
 </html>
