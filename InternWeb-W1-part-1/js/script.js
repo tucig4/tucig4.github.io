@@ -119,8 +119,9 @@ function currentIndex(m){
     }
 }
 
-    $('.button-search-container').one('click',function(){
-        $('.search-bar').append('<input class="input-1">');
+    $('.button-search-container, button-search-container-1').click(function(e){
+        e.preventDefault();
+        $('.search-form, .button-search-container').toggle();
     });  
 
 function openNav() {

@@ -198,7 +198,7 @@ html{
     background: #00bc9c;
     color: white;
 }
-.search-bar{
+/* .search-bar{
     position: relative;
     margin-top: 47px;
     width: 100px;
@@ -212,24 +212,44 @@ html{
 .input-search-bar:focus{
     position: absolute;
     border: black;
-}
-.ff {
+} */
+/* .ff {
     position: absolute;
     top: 5px;
     left: calc(100% - 17px);
     color: black;
-}    
+}     */
 .button-search-container{
+    
     position: relative;
+    margin-top: 50px;
     width: 14px;
     height: 14px;
     background-color: white;
     border: none;
 }
+.button-search-container-1{
+    position: relative;
+    margin-top: 50px;
+    top: 2px;
+    width: 14px;
+    height: 14px;
+    background-color: white;
+    border: none;
+}
+/* .input-1{
+    width:119%;
+} */
+.search-input-1{
+    margin-top: 50px;
+}
+.search-form{
+    display: none;
+}
 .nb{
     position: absolute;
-    top: 0;
-    left: 0;
+    top: calc(50% - 6px);
+    left: calc(50% - 6px);
     width: 12px;
     height: 12px;
 }
