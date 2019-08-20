@@ -463,6 +463,7 @@ html{
 .hero{
     background-image: url("../img/background.png");
     height: 880px;
+    transition: all 1s ease;
 }
 .next-btn{
     width: 60px;
