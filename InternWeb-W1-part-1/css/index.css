@@ -30,6 +30,7 @@ html{
     height: 40px;
 }
 .wrapper-header{
+    position: relative;
     width: 60.9375%;
     margin: 0 auto;
     display: flex;
@@ -171,6 +172,8 @@ html{
 /* Main menu
 ------------------------------------------*/
 #coolMenu {
+    position: absolute;
+    left: calc(50% - 309px);
     font-size: 15px;
     background: white;
 }
@@ -220,31 +223,24 @@ html{
     color: black;
 }     */
 .button-search-container{
-    
+    border: none;
     position: relative;
     margin-top: 50px;
-    width: 14px;
-    height: 14px;
+    width: 19px;
+    height: 19px;
     background-color: white;
-    border: none;
+    top: 4px;
+    
 }
 .button-search-container-1{
     position: relative;
     margin-top: 50px;
     top: 2px;
+    left: 1px;
     width: 14px;
     height: 14px;
     background-color: white;
     border: none;
-}
-/* .input-1{
-    width:119%;
-} */
-.search-input-1{
-    margin-top: 50px;
-}
-.search-form{
-    display: none;
 }
 .nb{
     position: absolute;
@@ -252,6 +248,21 @@ html{
     left: calc(50% - 6px);
     width: 12px;
     height: 12px;
+}
+
+.input-form-search{
+    border: 1px solid white;
+    outline: none;
+    margin-right: -23px;
+    width: 0;
+}
+.search-form-1:hover .button-search-container{
+    border: 1px solid black;
+}
+.search-form-1:hover .input-form-search{
+    transition: all 2s;
+    width: 100%;
+    border: 1px solid black;
 }
 @media only screen and (min-width: 697px ) and (max-width:1513px){
     .desktop{
@@ -733,6 +744,7 @@ html{
 .title-identity{
     border:1px solid #e6e9ed;
     height: 113px;
+    margin-top: -5px;
 }
 .latest-works-word-1{
     font-size:20px; 
@@ -782,7 +794,12 @@ html{
     height: 100%;
     opacity: 0.8;
 }
-.mask-1:hover::before{
+.mask-3{
+    position: relative;
+    width: 100%;
+    height: 95%;
+}
+.mask-3:hover::before{
     position: absolute;
     display: flex;
     justify-content: center;
@@ -792,6 +809,18 @@ html{
     background-color: #0db598;
     width: 100%;
     height: 100%;
+    opacity: 0.8;
+}
+.mask-1:hover::before{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    content: '+';
+    background-color: #0db598;
+    width: 100%;
+    height: 99%;
     opacity: 0.8;
 }
 .slider-image-container{

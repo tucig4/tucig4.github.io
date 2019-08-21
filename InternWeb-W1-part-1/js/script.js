@@ -119,10 +119,10 @@ function currentIndex(m){
     }
 }
 
-    $('.button-search-container, button-search-container-1').click(function(e){
-        e.preventDefault();
-        $('.search-form, .button-search-container').toggle();
-    });  
+    // $('.button-search-container, button-search-container-1').click(function(e){
+    //     e.preventDefault();
+    //     $('.search-form, .button-search-container').toggle();
+    // });  
 
 function openNav() {
     document.getElementById("myNav").style.height = "100%";
